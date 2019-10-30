@@ -1,0 +1,828 @@
+*{
+  background-color: rgb(41, 40, 40);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#top_background{
+  background-color: rgb(26, 25, 25);
+  position: fixed;
+  margin: 0;
+  width: 99vw;
+  height: 21vw;
+  bottom: 89vh;
+  right: 0.6vw;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+#top_text{
+  color: white;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: 0vh;
+  left: 41vw;
+  height: 5vh;
+  width: 20vw;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 2.4vw;
+  cursor: pointer;
+
+}
+
+#top_text:hover{
+  cursor: pointer;
+}
+#application_background{
+  position: absolute;
+  color: white;
+  background-color: rgb(26, 25, 25);
+  top: 16vh;
+  left: 10vw;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 15px;
+}
+
+#title_text{
+  color: white;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: 14%;
+  left: 44%;
+  height: 5%;
+  width: 20%;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 2.3vw;
+}
+
+#first_name{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 17%;
+  top: 14%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+  transition: 0.3s
+
+}
+
+#first_name:hover{
+  color:rgb(13, 147, 236);;
+  background-color: rgb(49, 48, 48);
+  -webkit-text-fill-color: white;
+}
+
+#name_title{
+  position: absolute;
+  top: 11.5%;
+  left: 6%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+
+}
+
+#last_name{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 65%;
+  top: 14%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+  transition: 0.3s
+
+}
+
+#last_name:hover{
+  color: rgb(13, 147, 236);
+  background-color: rgb(49, 48, 48);
+  -webkit-text-fill-color: white;
+}
+
+#lastname_title{
+  position: absolute;
+  top: 11.5%;
+  left: 54%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+
+}
+
+#email{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 17%;
+  top: 24%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+  transition: 0.3s
+
+}
+
+#email:hover{
+  color: rgb(13, 147, 236);
+  background-color: rgb(49, 48, 48);
+  -webkit-text-fill-color: white;
+}
+
+#email_title{
+  position: absolute;
+  top: 21.5%;
+  left: 10%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+}
+
+#feild{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 65%;
+  top: 24%;
+  width: 25%;
+  height: 7%;
+  border-color: white;
+  text-indent: 10px;
+  border-width: 2px;
+  transition: 0.3s;
+
+}
+
+#feild_title{
+  position: absolute;
+  top: 21.5%;
+  left: 58.5%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+}
+
+#feild:hover{
+  background-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(5, 4, 4);
+  cursor: pointer;
+}
+
+#options{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(26, 25, 25);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  font-size: 1.1vw;
+  outline: none;
+  border-color: white;
+  text-indent: 10px;
+  border-width: 2px;
+}
+
+#resume_title{
+  position: absolute;
+  top: 31.5%;
+  left: 9%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+}
+
+#resume{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 17%;
+  top: 34%;
+  width: 73%;
+  height: 6%;
+  border-color: white;
+  text-indent: 10px;
+  border-width: 2px;
+  transition: 0.3s
+
+}
+
+#resume:hover{
+  color: rgb(13, 147, 236);
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+#letter_title{
+  position: absolute;
+  top: 41.5%;
+  left: 6%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+}
+
+#letter{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(221, 205, 205, 0.973);
+  font-size: 1.1vw;
+  outline: none;
+  left: 17%;
+  top: 44%;
+  width: 73%;
+  height: 6%;
+  border-color: white;
+  text-indent: 10px;
+  border-width: 2px;
+  transition: 0.3s
+
+}
+
+#letter:hover{
+  color: rgb(13, 147, 236);
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+#submit_button{
+  position: absolute;
+  left: 45%;
+  top: 88%;
+  width: 10%;
+  height: 8%;
+  border-style: solid;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1.1vw;
+  cursor: pointer;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+
+}
+
+#submit_button:hover{
+  background-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(5, 4, 4);
+  cursor: pointer;
+}
+
+#accept_button{
+  position: absolute;
+  left: -10%;
+  top: 0%;
+  border-style: solid;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1.1vw;
+  cursor: pointer;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#checkbox_holder{
+  position: absolute;
+  left: 15%;
+  top: 90%;
+  border-style: none;
+  background-color: rgb(26, 25, 25, 0);
+  outline: none;
+  font-size: 1.1vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#terms_title{
+  position: absolute;
+  top: 51.5%;
+  left: 41%;
+  background-color: rgb(26, 25, 25, 0);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+}
+
+#terms_conditions{
+  position: absolute;
+  color: white;
+  background-color: rgb(14, 13, 13);
+  top: 64%;
+  left: 5%;
+  width: 89%;
+  height: 20%;
+  border-radius: 15px;
+}
+
+#name_error{
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(245, 4, 4);
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  text-align: center left;
+  font-size: 0.7vw;
+  outline: none;
+  left: 17%;
+  top: 19.3%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+}
+
+#lastname_error{
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(245, 4, 4);
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  text-align: center left;
+  font-size: 0.7vw;
+  outline: none;
+  left: 65.2%;
+  top: 19.3%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+}
+
+#email_error{
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(245, 4, 4);
+  background-color: rgb(26, 25, 25, 0);
+  z-index: 1;
+  text-align: center left;
+  font-size: 0.7vw;
+  outline: none;
+  left: 17%;
+  top: 29.3%;
+  width: 25%;
+  height: 6%;
+  text-indent: 10px;
+}
+
+#resumeattachment{
+  position: absolute;
+  top: 34.7%;
+  right: 10%;
+  border: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 10;
+  outline: none;
+  color: white;
+  width: 4%;
+  height: 6%;
+  text-align: center;
+  font-size: 1vw;
+  border-radius: 15px;
+  background-color: rgb(26, 25, 25);
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+#resumeattachment:hover{
+  background-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(5, 4, 4);
+  cursor: pointer;
+}
+
+#letterattachment{
+  position: absolute;
+  top: 44.6%;
+  right: 10%;
+  border: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 10;
+  outline: none;
+  color: white;
+  width: 4%;
+  height: 6%;
+  text-align: center;
+  font-size: 1vw;
+  border-radius: 15px;
+  background-color: rgb(26, 25, 25);
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+#letterattachment:hover{
+  background-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(5, 4, 4);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  #top_background{
+    height: 23vw;
+  }
+  #top_text{
+    top: 1vw;
+    font-size: 7vw;
+    width: 60vw;
+    left: 25vw;
+  }
+  #application_background{
+    width: 90vw;
+    top: 25vw;
+    height: 83vh;
+    left: 5vw;
+  }
+  #title_text{
+    font-size: 5vw;
+    left: 37vw;
+  }
+  #name_title{
+    font-size: 4vw;
+    left: 35vw;
+    top: 6vh;
+    
+  }
+  #first_name{
+    width: 65.5vw;
+    font-size: 4vw;
+  }
+  #lastname_title{
+    font-size: 4vw;
+    left: 35vw;
+    top: 16.5vh;
+    
+  }
+  #last_name{
+    width: 65.5vw;
+    top: 22vh;
+    left: 15vw;
+    font-size: 4vw;
+  }
+  
+  #email_title{
+    font-size: 4vw;
+    left: 40vw;
+    top: 26.5vh;
+  }
+  #email{
+    width: 65.5vw;
+    top: 32.5vh;
+    left: 15vw;
+    font-size: 4vw;
+  }
+  #feild_title{
+    font-size: 4vw;
+    left: 42vw;
+    top: 37vh;
+  }
+  #feild{
+    width: 65.5vw;
+    top: 43vh;
+    left: 15vw;
+    font-size: 4vw;
+
+  }
+  #resume_title{
+    font-size: 4vw;
+    left: 40vw;
+    top: 47vh;
+  }
+  #resume{
+    width: 65.5vw;
+    top: 53vh;
+    left: 15vw;
+    font-size: 4vw;
+  }
+  #letter_title{
+    font-size: 4vw;
+    left: 36.5vw;
+    top: 57vh;
+  }
+  #letter{
+    width: 65.5vw;
+    top: 63vh;
+    left: 15vw;
+    font-size: 4vw;
+  }
+  #letterattachment{
+    width: 15.5vw;
+    top: 63.5vh;
+    left: 65vw;
+    font-size: 4vw;
+  }
+  #resumeattachment{
+    width: 15.5vw;
+    top: 53.5vh;
+    left: 65vw;
+    font-size: 4vw;
+  }
+  #submit_button{
+    width: 25.5vw;
+    top: 73.5vh;
+    left: 35vw;
+    font-size: 4vw;
+    background-color: rgb(26, 25, 25, 0)
+  }
+  #checkbox_holder{
+    visibility: hidden;
+  }
+  #accept_button{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #top_background{
+    height: 23vw;
+  }
+  #top_text{
+    top: 0vw;
+    font-size: 4vw;
+    width: 60vw;
+    left: 35vw;
+  }
+  #application_background{
+    width: 90vw;
+    top: 14vh;
+    height: 85vh;
+    left: 5vw;
+  }
+  #title_text{
+    top: 11.5vh;
+    font-size: 4vw;
+    left: 40vw;
+  }
+  #name_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 4vh;
+    
+  }
+  #first_name{
+    width: 80.5vw;
+    left: 5vw;
+    font-size: 2.5vw;
+  }
+  #lastname_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 14.5vh;
+    
+  }
+  #last_name{
+    width: 80.5vw;
+    left: 5vw;
+    top: 22vh;
+    font-size: 2.5vw;
+  }
+  
+  #email_title{
+    font-size: 3vw;
+    left: 42vw;
+    top: 25vh;
+  }
+  #email{
+    width: 80.5vw;
+    left: 5vw;
+    top: 32.5vh;
+    font-size: 2.5vw;
+  }
+  #feild_title{
+    font-size: 3vw;
+    left: 43.5vw;
+    top: 35.5vh;
+  }
+  #feild{
+    width: 80.5vw;
+    left: 5vw;
+    top: 43vh;
+    font-size: 2.5vw;
+
+  }
+  #resume_title{
+    font-size: 3vw;
+    left: 41.5vw;
+    top: 45.5vh;
+  }
+  #resume{
+    width: 80.5vw;
+    left: 5vw;
+    top: 53vh;
+    font-size: 2.5vw;
+  }
+  #letter_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 55.5vh;
+  }
+  #letter{
+    width: 80.5vw;
+    left: 5vw;
+    top: 63vh;
+    font-size: 2.5vw;
+  }
+  #letterattachment{
+    width: 10.5vw;
+    top: 63.5vh;
+    left: 75vw;
+    font-size: 3vw;
+  }
+  #resumeattachment{
+    width: 10.5vw;
+    top: 53.5vh;
+    left: 75vw;
+    font-size: 3vw;
+  }
+  #submit_button{
+    width: 24.5vw;
+    top: 73.5vh;
+    left: 35vw;
+    font-size: 3vw;
+    background-color: rgb(26, 25, 25, 0)
+  }
+  #checkbox_holder{
+    visibility: hidden;
+  }
+  #accept_button{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #top_background{
+    height: 23vw;
+  }
+  #top_text{
+    top: 0vw;
+    font-size: 4vw;
+    width: 60vw;
+    left: 35vw;
+  }
+  #application_background{
+    width: 90vw;
+    top: 14vh;
+    height: 85vh;
+    left: 5vw;
+  }
+  #title_text{
+    top: 12.5vh;
+    font-size: 4vw;
+    left: 40vw;
+  }
+  #name_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 5.5vh;
+    
+  }
+  #first_name{
+    width: 80.5vw;
+    left: 5vw;
+    font-size: 2.5vw;
+  }
+  #lastname_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 15.5vh;
+    
+  }
+  #last_name{
+    width: 80.5vw;
+    left: 5vw;
+    top: 22vh;
+    font-size: 2.5vw;
+  }
+  
+  #email_title{
+    font-size: 3vw;
+    left: 42vw;
+    top: 26vh;
+  }
+  #email{
+    width: 80.5vw;
+    left: 5vw;
+    top: 32.5vh;
+    font-size: 2.5vw;
+  }
+  #feild_title{
+    font-size: 3vw;
+    left: 43.5vw;
+    top: 36.5vh;
+  }
+  #feild{
+    width: 80.5vw;
+    left: 5vw;
+    top: 43vh;
+    font-size: 2.5vw;
+
+  }
+  #resume_title{
+    font-size: 3vw;
+    left: 41.5vw;
+    top: 46.5vh;
+  }
+  #resume{
+    width: 80.5vw;
+    left: 5vw;
+    top: 53vh;
+    font-size: 2.5vw;
+  }
+  #letter_title{
+    font-size: 3vw;
+    left: 38vw;
+    top: 56.5vh;
+  }
+  #letter{
+    width: 80.5vw;
+    left: 5vw;
+    top: 63vh;
+    font-size: 2.5vw;
+  }
+  #letterattachment{
+    width: 10.5vw;
+    top: 63.5vh;
+    left: 75vw;
+    font-size: 3vw;
+  }
+  #resumeattachment{
+    width: 10.5vw;
+    top: 53.5vh;
+    left: 75vw;
+    font-size: 3vw;
+  }
+  #submit_button{
+    width: 24.5vw;
+    top: 73.5vh;
+    left: 35vw;
+    font-size: 3vw;
+    background-color: rgb(26, 25, 25, 0)
+  }
+  #checkbox_holder{
+    visibility: hidden;
+  }
+  #accept_button{
+    visibility: hidden;
+  }
+}

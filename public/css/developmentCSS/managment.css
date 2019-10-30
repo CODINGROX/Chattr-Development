@@ -1,0 +1,234 @@
+*{
+  background-color: rgb(31, 30, 30);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#top_background{
+  background-color: rgb(26, 25, 25);
+  position: fixed;
+  margin: 0;
+  width: 99%;
+  height: 21%;
+  bottom: 89%;
+  right: 0.6%;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+#top_text{
+  color: white;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: -1%;
+  left: 11%;
+  height: 5%;
+  width: 20%;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 2.4vw;
+}
+
+#security_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 33.07%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#security_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#developer_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 22.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#developer_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#managment_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 11.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#managment_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#tasks_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 0.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  border-bottom-right-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+#tasks_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#applications_background{
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  height: 38vw;
+  width: 96vw;
+  top: 7.5vw;
+  left: 2vw;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+#no_applications{
+  color: rgba(255, 255, 255, 0.445);
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: 15vw;
+  left: 32vw;
+  height: 5vw;
+  width: 30vw;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 2.4vw;
+}
+
+.app1{
+  position: absolute;
+  background-color: rgb(26, 25, 25);
+  height: 10vw;
+  width: 94vw;
+  top: 1vw;
+  left: 1vw;
+  border-radius: 15px;
+}
+
+#name{
+  color: rgba(255, 255, 255);
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: 2.6vw;
+  left: 2vw;
+  height: 5vw;
+  width: 50vw;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 1.5vw;
+}
+
+#request{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: 2.6vw;
+  left: 30vw;
+  height: 5vw;
+  width: 50vw;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 1.5vw;
+}
+
+#decline{
+  position: absolute;
+  top: 2.8vw;
+  left: 72vw;
+  height: 4vw;
+  width: 10vw;
+  background-color: rgb(150, 0, 0);
+  border-radius: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vw;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#decline:hover{
+  background-color: rgb(200, 0, 0);
+  transition: 0.3s
+}
+
+#review{
+  position: absolute;
+  top: 2.8vw;
+  left: 83vw;
+  height: 4vw;
+  width: 10vw;
+  background-color: rgb(1, 150, 1);
+  border-radius: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vw;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#review:hover{
+  background-color: rgb(1, 200, 1);
+  transition: 0.3s
+}
