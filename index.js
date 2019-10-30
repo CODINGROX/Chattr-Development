@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const crypto = require('crypto');
-const SALT = process.env.SALT
 var http = require('http');
-
 require('dotenv').config();
+
+const SALT = process.env.SALT
 var userExsists = 'false';
 var onlinestatus = 0;
 var sessionExsists = 0;
@@ -197,7 +197,7 @@ app.post('/register', (req, res) => {
 		}
 	});
 });
-app.listen(3001, () => console.log('server started on port: ' + 3001));
+app.listen(5500, () => console.log('server started on port: ' + 5500));
 
 const mongoClient = require('mongodb').MongoClient;
 const uri = process.env.TOKEN;
