@@ -42,5 +42,5 @@ function submit_app(){
     };
   };
 
-  location.href = "https://chattr-3--chattr.repl.co/jobs";
+  location.href = "/jobs";
 }
