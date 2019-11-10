@@ -7,27 +7,31 @@
 </head>
 
 <body>
-	<div class="top_bar"></div>
-	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+  </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Create</a>
+    <a href="/games"
+      id="games_button" type="submit" name="submit_button" value="Login">Games</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
+  <div class="main-container">
 
-	<button onclick='location.href="/friends"; return false;'
-		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
-
-	<button onclick='location.href="/create"; return false;'
-		id="create_button" type="submit" name="submit_button" value="Login">Create</button>
-
-	<button onclick='location.href="/games"; return false;'
-		id="games_button" type="submit" name="submit_button" value="Login">Games</button>
-
-	<button onclick='location.href="/profile"; return false;'
-		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
-
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">|||</button>
-
-	<input id="search_bar" type="search" name="" placeholder="Search">
-  <p id="copyright">@ Copyright 2019 Chattr</p>
-  <div id="bottom_header">
-    <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header">
+      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
+    </div>
   </div>
 	<script src="../js/main.js"></script>
 
