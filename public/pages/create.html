@@ -2,14 +2,15 @@
 
 <head>
 	<title>Create - Chattr</title>
-  <link href="../css/create.css" rel="stylesheet" type="text/css" />
-	<link href="../css/main.css" rel="stylesheet" type="text/css" />
-
+	<link href="../css/create.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+	<script src="../js/home.js"></script>
 	<div class="top_bar"></div>
-	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+	<h1 class="top_text">Chattr</h1>
+	<button onclick='location.href="/home"; return false;'
+		id="home_button" type="submit" name="submit_button" value="Login">Home</button>
 
 	<button onclick='location.href="/friends"; return false;'
 		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
@@ -23,17 +24,11 @@
 	<button onclick='location.href="/profile"; return false;'
 		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
 
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">|||</button>
+	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">Settings</button>
 
 	<input id="search_bar" type="search" name="" placeholder="Search">
 	<h3>Create</h3>
 	Content here!
-  <p id="copyright">@ Copyright 2019 Chattr</p>
-  <div id="bottom_header">
-    <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
-  </div>
-  <script src="../js/main.js"></script>
-
 </body>
 
 </html>

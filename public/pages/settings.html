@@ -2,13 +2,12 @@
   <head>
   <title>Settings - Chattr</title>
   <link href="../css/settings.css" rel="stylesheet" type="text/css" />
-  <link href="../css/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="../js/settings.js"> </script>
-     
-	<div class="top_bar"></div>
-	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home() ">Chattr</h1>
+     <div class="top_bar"></div>
+     <h1 class="top_text">Chattr</h1>
+	<button onclick='location.href="/home"; return false;'
+		id="home_button" type="submit" name="submit_button" value="Login">Home</button>
 
 	<button onclick='location.href="/friends"; return false;'
 		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
@@ -22,19 +21,24 @@
 	<button onclick='location.href="/profile"; return false;'
 		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
 
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">|||</button>
+	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">Settings</button>
 
-	<input id="search_bar" type="search" name="" placeholder="Search">
+     <input id="search_bar" type="search" name="" placeholder="Search">
+    <div class="box"></div>
+      <a class="btn" href="Password.html">Password Reset</a><br>
+    </div>
 
     <div id="options_background"> 
-      <button id="option1" onclick="openPage('account')"> Account </button>
-      <button id="option2" onclick="openPage('billing')"> Billing/Payments </button>
-      <button id="option3" onclick="openPage('security')"> Security and Login </button>
-      <button id="option4" onclick="openPage('privacy')"> Privacy </button>
-      <button id="option5" onclick="openPage('blocking')"> Blocking </button>
-      <button id="option6" onclick="openPage('groups')"> Groups/Games </button>
-      <button id="option7" onclick="openPage('content')"> Content Type </button>
-      <button id="option8" onclick="openPage('notifications')"> Notifications </button>
+      <button id="option1"> Profile </button>
+      <button id="option2"> Billing/Payments </button>
+      <button id="option3"> Security and Login </button>
+      <button id="option4"> Privacy </button>
+      <button id="option5"> Blocking </button>
+      <button id="option6"> Groups/Games </button>
+      <button id="option7"> Content Type </button>
+      <button id="option8"> Notifications </button>
+      <button id="option9"> Our Policy </button>
+      <button id="option10"> Jobs </button>
     </div>
 
     <div id="main_settings_page">
@@ -48,42 +52,28 @@
         <h3 id="password_value">*******</h3>
         <h2 id="title"> Your account </h2>
         <h3 id="language">Language: </h3>
-        <h3 id="language_value">English</h3>
-        <button id="change_name">Edit</button>
+        <h3 id="language_value">English(More coming soon)</h3>
+        <h3 id="change_name"><u> Edit </u></h3>
         <h3 id="cancel_change_name"> <u> Cancel </u> </h3>
         <h3 id="confirm_change_name"> <u> Confirm </u> </h3>
 
-        <button id="change_password">Edit</button>
-        <button id="logout" onclick="logOut()"> Logout </button>
+        <h3 id="change_password"> <u> Edit </u> </h3>
+        <button id="logout" onclick="logOut()"> Logout  </button>
+
+
       </div>
 
       <div id="customize_profile">
-        <h2 id="title1">Customize your profile</h2>
-       <h3 id="bio">Introduce yourself</h3> 
-        <div id="bio_input_holder">
-          <textarea placeholder="Write here!" id="bio_input"></textarea>
-          <button id="submitbio">Confirm</button>
-        </div>
-       <h3 id="pf_picture">Profile Picture</h3> 
-       <div id="picture">
-        <div id="placeholder_head"> </div> 
-        <div id="placeholder_body"> </div> 
-        </div>
+        <h2 id="title1">Customize your profile!</h2>
+       <h3 id="bio">Introduce yourself -</h3> 
+        <textarea placeholder="Write here!" id="bio_input"></textarea>
+         <button id="submitbio">Change!</button>
+         
+       <h3 id="pf_picture">Profile Picture -</h3> 
+       <div id="picture"> </div>
       </div>
     </div>
-
-    <div id="billing_and_payments_page"> </div>
-    <div id="security_and_login_page"> </div>
-    <div id="privacy_page"> </div>
-    <div id="groups_page"> </div>
-    <div id="blocking_page"> </div>
-    <div id="content_type_page"> </div>
-    <div id="notifications_page"> </div>
-    <p id="copyright">@ Copyright 2019 Chattr</p>
-    <div id="bottom_header">
-      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
-    </div>
     <script src="../js/settings.js"> </script>
-    <script src="../js/main.js"></script>
+
   </body>
 </html>
