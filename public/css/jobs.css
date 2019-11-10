@@ -20,30 +20,21 @@ html, body {
 }
 
 #top_text{
-  position:fixed;
   color: white;
+  position: fixed;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 30%;
   border-radius: 0;
-  margin-top: 0%;
-  margin-left: 0.1%;
-  backface-visibility: hidden;
+  top: -0.7vw;
+  left: 5vw;
+  height: 2vw;
+  width: 10%;
   outline: none;
-  text-align: center;
-  background-color: rgb(26, 25, 25, 0);
   font-size: 2.5vw;
-  width: 12%;
-  top: 2.3vh;
-  left: 3%;
-  cursor: pointer;
-  z-index: 100;
-}
-
-#top_text:hover{
-  cursor: pointer;
+  background-color: rgb(26, 25, 25, 0);
 }
 
 #team_Button{
+  transition: 0.2s;
   position: fixed;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,6 +56,7 @@ html, body {
 }
 
 #careers_Button{
+  transition: 0.2s;
   position: fixed;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -86,6 +78,7 @@ html, body {
 }
 
 #our_Goal_Button{
+  transition: 0.2s;
   position: fixed;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -107,6 +100,7 @@ html, body {
 }
 
 #contact_Button{
+  transition: 0.2s;
   position: fixed;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -162,7 +156,7 @@ html, body {
   border-radius: 0;
   bottom: 60%;
   font-size: 3vw;
-  left: 20%;
+  left: 13%;
   height: 10%;
   width: 10%;
   background-color: rgb(26, 25, 25, 0);
@@ -170,7 +164,7 @@ html, body {
 
 @keyframes animct{
   from{left: -70%; opacity: 0;}
-  to{left: 20%; opacity: 1;}
+  to{left: 13%; opacity: 1;}
 }
 
 @keyframes animct1{
@@ -192,6 +186,7 @@ html, body {
 }
 
 #apply_now_button{
+  transition: 0.3s;
   position: absolute;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -208,8 +203,8 @@ html, body {
 }
 
 #apply_now_button:hover{
-  background-color: rgb(3, 71, 92);
-  color: white;
+  background-color: rgb(19, 152, 19);
+  color: black;
   transition: 0.3s;
 }
 
@@ -364,129 +359,4 @@ html, body {
   z-index: -3;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
-
-@media only screen and (max-width: 480px) {
-  
-  #team_background{
-    height: 60vw;
-    top: 10vw;
-    left: 0vw;
-    width: 110vw;
-    transition: 0s;
-  }
-  #top_background{
-    width: 110vw;
-    top: 0vw;
-    height: 23vw;
-    left: 0vw;
-  }
-  #career_title{
-    font-size: 7vw;
-    height: 7vw;
-    width: 25vw;
-    top: 9vw;
-  }
-  #career_title1{
-    top: 21vw;
-    height: 14vw;
-    font-size: 7vw;
-  }
-  #apply_now_button{
-    width: 25vw;
-    height: 12vw;
-    left: 44vw;
-    font-size: 3.5vw;
-  }
-  #img2{
-    width: 50vw;
-    left: 60vw;
-  }
-
-  #img1{
-    width: 60vw;
-    left: 0vw;
-  }
-  #team_background1{
-    height: 110vw;
-    top: 0vw;
-    left: 0vw;
-    width: 110vw;
-  }
-  #team_desc{
-    top: 70vw;
-  }
-  #title1{
-    top: 0vw;
-    font-size: 7vw;
-  }
-  #desc1{
-    top: 15vw;
-    font-size: 5vw;
-  }
-  #title2{
-    top: 115vw;
-    font-size: 7vw;
-  }
-  #desc2{
-    top: 130vw;
-    font-size: 5vw;
-  }
-  #open_positions{
-    top: 185vw;
-    font-size: 5vw;
-  }
-  #title3{
-    top: 405vw;
-    font-size: 7vw;
-  }
-  #desc3{
-    top: 430vw;
-    font-size: 5vw;
-  }
-  #title4{
-    top: 490vw;
-    font-size: 7vw;
-    width: 80vw;
-  }
-  #desc4{
-    top: 515vw;
-    font-size: 5vw;
-    text-overflow: inherit;
-  }
-  #team_Button{
-    top: 0%;
-    left: 30vw;
-    width: 20vw;
-    height: 22.99vw;
-    font-size: 4vw;
-  }
-  #careers_Button{
-    top: 0%;
-    left: 50vw;
-    width: 20vw;
-    height: 22.99vw;
-    font-size: 4vw;
-  }
-  #contact_Button{
-    top: 0%;
-    left: 90vw;
-    width: 20vw;
-    height: 22.99vw;
-    font-size: 4vw;
-  }
-  #our_Goal_Button{
-    top: 0%;
-    left: 70vw;
-    width: 20vw;
-    height: 22.99vw;
-    font-size: 4vw;
-  }
-  #top_text{
-    top: 0%;
-    left: 2vw;
-    width: 20vw;
-    height: 15vw;
-    font-size: 9vw;
-  }
 }
