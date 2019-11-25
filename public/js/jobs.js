@@ -38,5 +38,5 @@ setInterval(100);
 career_title1.style.animation = "animct1 1s normal";
 
 function apply(){
-  location.href = "https://chattr-3--chattr.repl.co/apply";
+  location.href = "/apply";
 }

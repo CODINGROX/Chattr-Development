@@ -5,84 +5,110 @@
   <link href="../css/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="../js/settings.js"> </script>
-     
-	<div class="top_bar"></div>
-	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home() ">Chattr</h1>
-
-	<button onclick='location.href="/friends"; return false;'
-		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
-
-	<button onclick='location.href="/create"; return false;'
-		id="create_button" type="submit" name="submit_button" value="Login">Create</button>
-
-	<button onclick='location.href="/games"; return false;'
-		id="games_button" type="submit" name="submit_button" value="Login">Games</button>
-
-	<button onclick='location.href="/profile"; return false;'
-		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
-
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">|||</button>
-
-	<input id="search_bar" type="search" name="" placeholder="Search">
-
-    <div id="options_background"> 
-      <button id="option1" onclick="openPage('account')"> Account </button>
-      <button id="option2" onclick="openPage('billing')"> Billing/Payments </button>
-      <button id="option3" onclick="openPage('security')"> Security and Login </button>
-      <button id="option4" onclick="openPage('privacy')"> Privacy </button>
-      <button id="option5" onclick="openPage('blocking')"> Blocking </button>
-      <button id="option6" onclick="openPage('groups')"> Groups/Games </button>
-      <button id="option7" onclick="openPage('content')"> Content Type </button>
-      <button id="option8" onclick="openPage('notifications')"> Notifications </button>
-    </div>
-
-    <div id="main_settings_page">
-      <div id="profile_Customization_Page">
-        <h3 id="show_name">Name: </h3>
-        <h3 id="name"> user1</h3>
-        <input id="change_name_input" type="text" name="" placeholder="user1"></h3>
-        <input id="change_password_input" type="password" name="" placeholder="password"></h3>
-
-        <h3 id="password">Password: </h3>
-        <h3 id="password_value">*******</h3>
-        <h2 id="title"> Your account </h2>
-        <h3 id="language">Language: </h3>
-        <h3 id="language_value">English</h3>
-        <button id="change_name">Edit</button>
-        <h3 id="cancel_change_name"> <u> Cancel </u> </h3>
-        <h3 id="confirm_change_name"> <u> Confirm </u> </h3>
-
-        <button id="change_password">Edit</button>
-        <button id="logout" onclick="logOut()"> Logout </button>
-      </div>
-
-      <div id="customize_profile">
-        <h2 id="title1">Customize your profile</h2>
-       <h3 id="bio">Introduce yourself</h3> 
-        <div id="bio_input_holder">
-          <textarea placeholder="Write here!" id="bio_input"></textarea>
-          <button id="submitbio">Confirm</button>
-        </div>
-       <h3 id="pf_picture">Profile Picture</h3> 
-       <div id="picture">
-        <div id="placeholder_head"> </div> 
-        <div id="placeholder_body"> </div> 
+  <script src="../js/settings.js"> </script>
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+  </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Create</a>
+    <a href="/games"
+      id="games_button" type="submit" name="submit_button" value="Login">Games</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
+    <div class="container-A">
+      <div class="container-1">
+        <div class="options_background"> 
+          <button id="option1" onclick="openPage('account')"> Account </button>
+          <button id="option2" onclick="openPage('billing')"> Billing/Payments </button>
+          <button id="option3" onclick="openPage('security')"> Security and Login </button>
+          <button id="option4" onclick="openPage('privacy')"> Privacy </button>
+          <button id="option5" onclick="openPage('blocking')"> Blocking </button>
+          <button id="option6" onclick="openPage('groups')"> Groups/Games </button>
+          <button id="option7" onclick="openPage('content')"> Content Type </button>
+          <button id="option8" onclick="openPage('notifications')"> Notifications </button>
         </div>
       </div>
-    </div>
+      <div class="container-2">
+        <div class="main_settings_page">
+          <div class="inner-containerAC">
+          <div id="profile_Customization_Page">
+            <div class="inner-container">
+              <div class="inner-container-A2">
+                <h2 id="title"> Your account </h2>
+              </div>
+              <div class="inner-container-1">
+                <h3 id="show_name">Name: </h3>
+                <h3 id="name"> user1</h3>
+              </div>
+              <div class="inner-container-2">
+                <h3 id="password">Password: </h3>
+                <h3 id="password_value">*******</h3>
+              </div>
+              <div class="inner-container-3">
+                <h3 id="language">Email: </h3>
+                <h3 id="language_value">example_email@gmail.com</h3>
+              </div>
+            </div>
+            <div class="inner-container-a">
+              <button id="change_name">Change</button>
+              <button id="change_password">Change</button>
+              <button id="change_language">Change</button>
 
-    <div id="billing_and_payments_page"> </div>
-    <div id="security_and_login_page"> </div>
-    <div id="privacy_page"> </div>
-    <div id="groups_page"> </div>
-    <div id="blocking_page"> </div>
-    <div id="content_type_page"> </div>
-    <div id="notifications_page"> </div>
-    <p id="copyright">@ Copyright 2019 Chattr</p>
+              <button id="logout" onclick="logOut()">Logout</button>
+            </div>
+          </div>
+
+           <!-- <input id="change_name_input" type="text" name="" placeholder="user1"></h3>
+            <input id="change_password_input" type="password" name="" placeholder="password"></h3>
+
+            
+            <h2 id="title"> Your account </h2>
+            
+            <h3 id="cancel_change_name"> <u> Cancel </u> </h3>
+            <h3 id="confirm_change_name"> <u> Confirm </u> </h3>
+
+            -->
+          <div class="customize_profile">
+          <h2 id="title1">Customize your profile</h2>
+          <h3 id="pf_picture">Profile Picture</h3> 
+          <div id="picture">
+            <div class="pic-background">
+              <div id="placeholder_head"> </div> 
+              <div id="placeholder_body"> </div> 
+            </div>
+          </div>
+          <h3 id="bio">Introduce yourself</h3> 
+            <div id="bio_input_holder">
+              <textarea placeholder="Write here!" id="bio_input"></textarea>
+            </div>
+            <button id="save">Save</button>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div id="billing_and_payments_page"> </div>
+        <div id="security_and_login_page"> </div>
+        <div id="privacy_page"> </div>
+        <div id="groups_page"> </div>
+        <div id="blocking_page"> </div>
+        <div id="content_type_page"> </div>
+        <div id="notifications_page"> </div>
+      </div>
+    </div>
+  <div class="bottom-container">
     <div id="bottom_header">
       <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
     </div>
+  </div>
     <script src="../js/settings.js"> </script>
     <script src="../js/main.js"></script>
   </body>

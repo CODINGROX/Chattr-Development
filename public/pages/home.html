@@ -12,60 +12,94 @@
 </head>
 
 <body>
-	<div class="top_bar"></div>
-	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
-
-	<button onclick='location.href="/friends"; return false;'
-		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
-
-	<button onclick='location.href="/create"; return false;'
-		id="create_button" type="submit" name="submit_button" value="Login">Create</button>
-
-	<button onclick='location.href="/games"; return false;'
-		id="games_button" type="submit" name="submit_button" value="Login">Games</button>
-
-	<button onclick='location.href="/profile"; return false;'
-		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
-
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">|||</button>
-
-	<input id="search_bar" type="search" name="" placeholder="Search">
-	<div id="status">
-		<input id="add_status" type="text" name="" placeholder="How are you feeling today?">
-		<h3 id="title"></h3>
-		<div id="status_background"> </div>
-	</div>
-
-	<div id="recent_posts">
-		<div id="recent_posts_background">   
-      <h3 id="background_posts_title">Zzzz.. No recent posts..</h3>
-    </div>
-	</div>
-
-	<div id="recent_games">
-		<h3 id="title_1">Create games today!</h3>
-		<div id="recent_games_background">
-			<div id="pic_1"><p id="studio_text">With a wide range of selections to choose from, our studio gives you many tools as a developer, such as realistic physics and wide range of programming languages, allowing you to create virtually anything that you can think of.</p></div>
-			<div id="pic_2"> </div>
-			<div id="create_games_background">
-				<button id="create_button_">Download studio v0.0.1 </button>
-			</div>
-		</div>
-
-	</div>
-
-	<div id="friends">
-		<div id="background_friends"> 
-      <h3 id="background_friends_title"></h3>
-      <button id="friends_button_">Find friends!</button>
-
-    </div>
-	</div>
-  <p id="copyright">@ Copyright 2019 Chattr</p>
-  <div id="bottom_header">
-    <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
   </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Create</a>
+    <a href="/games"
+      id="games_button" type="submit" name="submit_button" value="Login">Games</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
+  <div class="main-container">
+    <div class="left-container">
+      <div id="status">
+        <div id="status_background">
+          <h3 id="title"></h3>
+          <div class="status-bar">
+            <div class="emoji-bar">
+              <div class="emoji-1">
+              
+              </div>
+              <div class="emoji-2">
+              
+              </div>
+              <div class="emoji-3">
+              
+              </div>
+              <div class="emoji-5">
+              
+              </div>
+            </div>
+            <input id="add_status" type="text" name="" placeholder="How are you feeling today?">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-container">
+      <div id="recent_posts">
+        <div id="recent_posts_background">   
+          <h3 id="background_posts_title">Zzzz.. No recent posts..</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="right-container">
+      <div id="friends">
+        <div id="background_friends"> 
+          <h3 id="background_friends_title"></h3>
+          <button id="friends_button_">Find friends!</button>
+        </div>
+      </div>
+      <div id="recent_games">
+        <div id="recent_games_background">
+          <h3 id="title_1">Create games today!</h3>
+          <div class="bottom-div">
+            <div class="bottom-left-div">
+              <div id="pic_1"><p id="studio_text">With a wide range of selections to choose from, our studio gives you many tools as a developer, such as realistic physics and a wide range of programming languages, allowing you to create virtually anything that you can think of.</p></div>
+              <div id="create_games_background">
+                <button id="create_button_">Download studio v0.0.1 </button>
+              </div>
+            </div>
+            <div class="bottom-right-div">
+              <div id="pic_2"> </div>
+            </div>
 
+          </div>
+        <!--<h3 id="title_1">Create games today!</h3>
+        <div id="recent_games_background">
+          <div id="pic_1"><p id="studio_text">With a wide range of selections to choose from, our studio gives you many tools as a developer, such as realistic physics and wide range of programming languages, allowing you to create virtually anything that you can think of.</p></div>
+          <div id="pic_2"> </div>
+          
+        </div>
+      </div>-->
+    </div>  
+    </div>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header">
+      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
 	<script src="../js/home.js"></script>
   <script src="../js/main.js"></script>
 </body>
