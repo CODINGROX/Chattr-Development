@@ -34,7 +34,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 30%;
   border-radius: 0;
-  margin-left: 3vw;
+  margin-top: 2vw;
   backface-visibility: hidden;
   outline: none;
   text-align: center;
@@ -42,6 +42,8 @@
   width: 13vw;
   cursor: pointer;
   z-index: 202;
+  justify-self: center;
+  align-self: center;
 }
 
 .links-container{
