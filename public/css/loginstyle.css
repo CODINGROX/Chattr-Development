@@ -1,19 +1,58 @@
 *{
-  background-color: rgb(44, 43, 43);
-  margin: 0;
+  background-color: rgb(31, 30, 30)
+}
+
+.container{
+  position:fixed;
+  bottom: 88.5%;
+  width: 10%;
+  margin: auto;
+  right: 75%;
+  z-index: 1000;
+}
+
+.top_text{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 30px;
+  border-radius: 0;
+  height: 0.1%;
+  backface-visibility: hidden;
+  outline: none;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
 }
 
 .top_background{
   background-color: rgb(26, 25, 25);
   position: fixed;
   margin: 0;
-  width: 99vw;
-  height: 21vw;
-  top: -15.7vw;
-  right: 0.6vw;
-  border-radius: 10px;
-  z-index: 5;
+  width: 99%;
+  height: 21%;
+  bottom: 89%;
+  right: 0.6%;
+  z-index: -1;
+  border-radius: 10px
 }
+
+button:hover{
+  background-color: rgb(13, 236, 13);
+  color: rgb(20, 19, 19)
+}
+
+button{
+  border-radius: 30px;
+  border-style: none;
+  background-color: rgb(46, 46, 46);
+  bottom: 91.5%;
+  right: 51%;
+  height: 40px;
+  width: 7.5%;
+  margin: auto;
+  position: fixed;
+}
+
+
 
 form{
   margin: 10px;
@@ -27,17 +66,14 @@ form input{
 }
 
 #Log_In{
-  position: fixed;
+  position: absolute;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: rgb(26, 25, 25, 0);
-  border-color: rgb(221, 205, 205, 0.8);
-  -webkit-text-fill-color: white;
-  z-index: 100;
-  top: 0vw;
-  right: 0vw;
-  height: 5vw;
-  width: 100vw;
+  z-index: 1;
+  top: 0.8%;
+  right: 20%;
+  width: 20%
 }
 
 #Log_In input{
@@ -45,52 +81,32 @@ form input{
  position:  absolute;
  border-radius: 15px;
  background-color: rgb(26, 26, 25);
- border-color: rgb(221, 205, 205, 0.8);
+ 
  text-align: center left;
- -webkit-text-fill-color: rgb(241, 238, 238);
+ -webkit-text-fill-color: rgb(221, 205, 205);
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  text-size-adjust: 30px;
- -webkit-text-size-adjust: 30px;
-}
-
-#top_text{
-  position:fixed;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 30%;
-  border-radius: 0;
-  margin-top: 0%;
-  margin-left: 0.1%;
-  backface-visibility: hidden;
-  outline: none;
-  text-align: center;
-  background-color: rgb(26, 25, 25, 0);
-  font-size: 2.5vw;
-  width: 12%;
-  top: 2.3vh;
-  left: 3%;
-  cursor: pointer;
+ font-weight: 1000;
+ -webkit-text-size-adjust: 30px
 }
 
 #Password{
   position: absolute;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  border-color: rgb(221, 205, 205, 0.8);
   background-color: rgb(26, 25, 25, 0);
   z-index: 1;
+  top: 110%;
+  right: 0%;
+  left:2450%;
+  width: 800%;
   border-style: solid;
-  border-radius: 15px;
-  text-align: center left;
+ border-radius: 15px;
+ text-align: center left;
   -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
-  font-size: 1.2vw;
-  outline: none;
-  left: 71%;
-  top: 1vw;
-  width: 17vw;
-  height: 3vw;
-  transition: 0.3s
-
+ -webkit-text-size-adjust: 30px;
+ height: 190%;
+ outline: none
 }
 
 #Login{
@@ -99,64 +115,60 @@ form input{
   color: white;
   background-color: rgb(26, 25, 25, 0);
   z-index: 1;
+  top: 110%;
+  right: 0%;
+  left:1600%;
   border-style: solid;
-  border-radius: 15px;
-  text-align: center left;
+ border-radius: 15px;
+ text-align: center left;
   -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
-  font-size: 1.2vw;
-  outline: none;
-  left: 53vw;
-  top: 1vw;
-  width: 17vw;
-  height: 3vw;
-  transition: 0.3s
-
+ -webkit-text-size-adjust: 30px;
+   height: 190%;
+   width: 800%;
+   outline: none;
 }
 
 #Login:hover{
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
-  color: rgb(13, 147, 236);
-  border-color: rgb(13, 147, 236);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 
 #Login:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
-  border-color: rgb(13, 147, 236);
   -webkit-text-fill-color: white;
 }
 
 #Password:hover{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
-  border-color: rgb(13, 147, 236);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 
 #Password:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
-  border-color: rgb(13, 147, 236);
   -webkit-text-fill-color: white;
 }
 
 #login_button{
   position: absolute;
-  left: 89vw;
-  top: 1vw;
-  width: 7vw;
-  height: 3.5vw;
-  border-style: none;
+  left: 3300%;
+  top: 110%;
+  width: 250%;
+  height: 215%;
   outline: none;
-  font-size: 1.1vw;
-  transition: 0.3s;
+
 }
 
 #login_button:hover{
   color: white;
   background-color: white;
   -webkit-text-fill-color: black;
+  transition: all 0.3s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
 }
@@ -177,256 +189,242 @@ input[type="email"]{
 
 }
 
-.main-container{
-  display: flex;
-  flex-direction: column;
-}
-
-.top-container{
-  display: flex;
-  flex-direction: row;
-}
-
-
 #Register{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position:  absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: rgb(26, 25, 25, 0);
-  top:25%;
-  left:10%;
+  z-index: 1;
+  top: 30%;
+  right: 0%;
+  left:70%;
   border-style: solid;
   border-radius: 15px;
   text-align: center left;
-  -webkit-text-fill-color: rgb(221, 205, 205);
-  font-size: 1.2vw;
-  height: 2.9vw;
-  width: 80%;
+  -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
+  -webkit-text-size-adjust: 30px;
+  height: 6%;
+  width: 20%;
   outline: none;
   text-size-adjust: 30px;
-  transition: 0.3s;
+  font-weight: 900;
 }
 
 #Register:hover{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 #Register:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
 }
 
 
 #Email{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position:  absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: rgb(26, 25, 25, 0);
-  top:40%;
-  left:10%;
+  z-index: 1;
+  top: 38%;
+  right: 0%;
+  left:70%;
   border-style: solid;
   border-radius: 15px;
   text-align: center left;
-  -webkit-text-fill-color: rgb(221, 205, 205);
-  font-size: 1.2vw;
-  height: 2.9vw;
-  width: 80%;
+  -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
+  -webkit-text-size-adjust: 30px;
+  height: 6%;
+  width: 20%;
   outline: none;
   text-size-adjust: 30px;
-  transition: 0.3s
-
+  font-weight: 900;
 }
 
 #Email:hover{
- color: rgb(13, 147, 236);
+ color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 
 #Email:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
 }
 
 #Password1{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position:  absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: rgb(26, 25, 25, 0);
-  top:55%;
-  left:10%;
+  z-index: 1;
+  top: 46%;
+  right: 0%;
+  left:70%;
   border-style: solid;
   border-radius: 15px;
   text-align: center left;
-  -webkit-text-fill-color: rgb(221, 205, 205);
-  font-size: 1.2vw;
-  height: 2.9vw;
-  width: 80%;
+  -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
+  -webkit-text-size-adjust: 30px;
+  height: 6%;
+  width: 20%;
   outline: none;
   text-size-adjust: 30px;
-  transition: 0.3s;
+  font-weight: 900;
 }
 
 #Password1:hover{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 #Password1:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
 }
 #Password2{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
+  position:  absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(221, 205, 205);
   background-color: rgb(26, 25, 25, 0);
-  top:70%;
-  left:10%;
+  z-index: 1;
+  top: 54%;
+  right: 0%;
+  left:70%;
   border-style: solid;
   border-radius: 15px;
   text-align: center left;
-  -webkit-text-fill-color: rgb(221, 205, 205);
-  font-size: 1.2vw;
-  height: 2.9vw;
-  width: 80%;
+  -webkit-text-fill-color: rgb(221, 205, 205, 0.2);
+  -webkit-text-size-adjust: 30px;
+  height: 6%;
+  width: 20%;
   outline: none;
   text-size-adjust: 30px;
-  transition: 0.3s;
+  font-weight: 900;
 }
 
 #Password2:hover{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
+  transition: 0.3s
 }
 
 #Password2:focus{
-  color: rgb(13, 147, 236);
+  color: rgb(13, 236, 13);
   background-color: rgb(49, 48, 48);
   -webkit-text-fill-color: white;
 }
 
 #RegisterButton{
+  position:  absolute;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background-color: rgb(26, 25, 25, 0);
-  top:85%;
-  left:10%;
+  color: rgb(221, 205, 205);
+  background-color: rgba(30, 255, 0, 0);
+  z-index: 1;
+  top: 62.5%;
+  right: 0%;
+  left:70%;
   border-style: solid;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center left;
-  -webkit-text-fill-color: rgb(221, 205, 205);
-  font-size: 1.1vw;
-  height: 2.9vw;
-  width: 80%;
+  -webkit-text-fill-color: rgb(253, 246, 246);
+  -webkit-text-size-adjust: 30px;
+  height: 6%;
+  width: 20%;
   outline: none;
-  margin-bottom: 3%;
   text-size-adjust: 30px;
-  transition: 0.3s;
+  font-weight: 900;
 }
 
 #RegisterButton:hover{
+  color: rgb(13, 236, 13);
   background-color: rgb(255, 255, 255);
   -webkit-text-fill-color: rgb(5, 5, 5);
   cursor: pointer;
+  transition: 0.3s;
 }
 
-#register_Background{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: none;
-  height: 25.7vw;
-  background-color: rgb(20, 19, 19);
-  border-radius: 10px;
-  margin-top: 12vh;
-  margin-left: 3vw;
-  width: 26vw;
-  right: 7vw;
-  top: 7.6vw;
-}
-
-#register_Background > input{
-  margin-top: 3%;
-}
-
-#Special_Div{
+#Login_Background{
   position: absolute;
   outline: none;
-  height: 0vw;
+  height: 55%;
   background-color: rgb(20, 19, 19);
   border-radius: 10px;
-  width: 0vw;
-  right: 7vw;
-  top: 7.6vw;
-  visibility: none
+  width: 26%;
+  right: 7%;
+  top: 16%;
 }
 
 #Desc_Background{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   outline: none;
-  height: 25.7vw;
+  height: 55%;
   background-color: rgb(20, 19, 19);
   border-radius: 10px;
-  margin-left: 4.8vw;
-  margin-right: 0.2vw;
-  margin-top:12vh;
-  width: 60vw;
+  width: 60%;
+  right: 37%;
+  top: 16%;
 }
 
 #NoAccountText{
+  position: absolute;
   outline: none;
+  height: 0%;
   background: none;
   border-radius: 10px;
-  margin: 8px;
-  width: 23vw;
-  right: 9vw;
-  top: 7vw;
+  width: 23%;
+  right: 9%;
+  top: 15%;
   -webkit-text-fill-color: rgb(255, 255, 255);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2vw;
   text-align: center;
-  margin-bottom: 0;
   /* font-weight: 900; */
 }
 
 #Desc2_Background{
-  display: flex;
+  position: absolute;
   outline: none;
-  height: 33vh;
-  margin-top: 5vh;
+  height: 35%;
   background-color: rgb(20, 19, 19);
   border-radius: 10px;
-  width: 89.5vw;
-  overflow: scroll;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  right: 7%;
+  top: 76%;
 }
 
 #Description{
+  position: absolute;
   outline: none;
-  height: 90%;
+  height: 35%;
   background-color: rgb(197, 9, 9, 0);
   border-radius: 10px;
-  width: 97%;
-  left: 1.5%;
-  top: 5%;
-  color: rgb(255, 255, 255);
+  width: 87%;
+  right: 8%;
+  top: 76.5%;
+  -webkit-text-fill-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.5vw;
   font-weight: 700;
 }
 
 #Desc1_Background{
+  position: absolute;
   outline: none;
-  height: 24.5vw;
+  height: 52%;
   background-color: rgb(31, 30, 30);
   border-radius: 10px;
-  width: 58.5vw;
+  width: 57%;
+  right: 38.5%;
+  top: 17.5%;
 }
 
 .Top_bar{
@@ -443,11 +441,13 @@ input[type="email"]{
 #copyright{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 5vh;
   height: 0.1%;
   text-align: center;
   background-color: rgb(26, 25, 25);
 	font-size: 12px;
+	position: absolute;
+  bottom: -30%;
+  left: 45%;
 }
 
 #error_mssg_lgin{
@@ -461,41 +461,14 @@ input[type="email"]{
   visibility: hidden;
 }
 
-.bottom-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #bottom_header{
-  display: flex;
-  flex-direction: column;
   background-color: rgb(20, 19, 19);
-  width: 99vw;
-  height: 7.5vw;
-  margin-top: 5vh; 
-  margin-bottom: 0;
-  z-index: 1;
+  position: absolute;
+  width: 99%;
+  height: 15%;
+  bottom: -31%;
+  right: 0.6%;
+  z-index: -1;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
-#jobs_tag{
-  width: 3vw;
-  height: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-  font-size: 1.6vw;
-  background-color: rgb(20, 19, 19, 0);
-  z-index: 50;
-  transition: 0.1s;
-
-}
-
-#jobs_tag:hover{
-  color: rgb(4, 243, 4);
-  cursor: pointer;
 }

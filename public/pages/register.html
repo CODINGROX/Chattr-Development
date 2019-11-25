@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<style>
+			#error {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="error">{{ error }}</div>
+		<div id="login_form">
+		<form method="post" action="/login">
+			<input id="Login" type="text" name="name" placeholder="Username"><br>
+			<input id="Password" type="password" name="password" placeholder="Password"><br>
+			<input id="login_button" type="submit" value="Login">
+		</form>
+		</div>
+	</body>
+</html>

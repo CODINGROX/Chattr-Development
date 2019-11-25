@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Chattr</title>
@@ -9,52 +10,57 @@
 </head>
 
 <body>
+	<!-- <header>Access-Control-Allow-Origin "*"</header> -->
+
+	<div class="container">
+
 		<div class="background">
-			<div class="top_background">        
-         <div id="Log_In">
-          <img id="top_text" src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
-          <form autocomplete='false' action="/home" method="post" onsubmit="createCookies();">
-            <input id="Login" type="text" name="name" placeholder="Username">
-            <input id="Password" type="password" name="password" placeholder="Password">
-            <input id="login_button" type="submit" value="Login">
-          </form>
-        </div>
-      </div>
+			<h1 class="top_text">Chattr</h1>
+			<div class="top_background"></div>
 		</div>
-    <div class="main-container">
-	  <form autocomplete='false' action="/register", method="post", onsubmit="createCookiesforRegistration();">		
-    <div class="top-container">
-      <div id="Special_Div"> </div>
-      <div id="Desc_Background"> 
-        <div id="Desc1_Background"> </div>
-      </div>
-      <div id="register_Background">
-        <h2 id="NoAccountText">No account? Register here for free!</h2>
-        <input id="Register" type="text" name="registerName" placeholder="Username">
-        <input id="Email" type="email" name="registerEmail" placeholder="Email">
-        <input id="Password1" type="password" name="registerPassword" placeholder="Password">
-        <input id="Password2" type="password" name="" placeholder="Re-enter password">
-        <input id="RegisterButton" type="submit" name="" value="Register">
-      </div>
-      </form>
-    </div>
-    <div class="bottom-container">
-      <div id="Desc2_Background">
-        <p id="Description">
-          Welcome to Chattr, a free online website where you can chat, create large groups, or even play
-          and design games all in a safe online enviorment, for free! We will be enableing our users to be able to create or play games, advertise there buisnesses and/or products, create events, chat to other users and more! If you have any questions or concerns
-          you may email us at chattrresources@gmail.com.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="bottom-container">
-    <div id="bottom_header">
-      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
-      <p id="copyright">@ Copyright 2019 Chattr</p>
-    </div>
-  </div>
+
+		<div id="Log_In">
+			<!-- <form autocomplete='off' onsubmit="myFunction()">
+				<input id="Login" type="text" name="UserName" placeholder="Username">
+				<input id="Password" type="password" name="" placeholder="Password">
+				<input onclick="myFunction(); return false;" id="login_button" type="submit" name="submit_button" value="Login">
+			</form> -->
+			<form autocomplete='off' action="/login" method="post" onsubmit="createCookies();">
+				<input id="Login" type="text" name="name" placeholder="Username">
+				<input id="Password" type="password" name="password" placeholder="Password">
+				<input id="login_button" type="submit" value="Login">
+			</form>
+		</div>
+	</div>
+	<form autocomplete='off' action="/register", method="post", onsubmit="createCookiesforRegistration();">
+		<input id="Register" type="text" name="registerName" placeholder="Username">
+		<input id="Email" type="email" name="registerEmail" placeholder="Email">
+		<input id="Password1" type="password" name="registerPassword" placeholder="Password">
+		<input id="Password2" type="password" name="" placeholder="Re-enter password">
+		<input id="RegisterButton" type="submit" name="" value="Register">
+
+
+		<div id="Login_Background"> </div>
+		<div id="Desc_Background"> </div>
+		<div id="Desc1_Background"> </div>
+		<div id="Desc2_Background"> </div>
+
+		<h2 id="NoAccountText">No account? Register here for free!</h2>
+	</form>
+
+	<p id="Description">
+		Welcome to Chattr, a free online website where you can chat, create large groups, or even play
+		and design games all in a safe online enviorment, for free! If you have any questions or concerns
+		you may email us at contactexample@gmail.com.
+	</p>
+
+  <p id="copyright">@ Copyright 2019 Chattr</p>
+  <div id="bottom_header"> </div>
+
 	<script src="../js/script.js"></script>
-	<script src="../js/login.js"></script>
+	<script src="../js/login.js"> </script>
+	<script src="../js/database.js"></script>
+
 </body>
+
 </html>
