@@ -3,7 +3,7 @@ var careers = document.getElementById("desc2");
 var goal = document.getElementById("title3");
 var contact = document.getElementById("desc4");
 var career_title = document.getElementById("career_title");
-var career_title1 = document.getElementById("career_title1");
+var career_title1 = document.getElementById("career_title1")
 
 
 function scrollTeam(){
@@ -34,9 +34,9 @@ function scrollContact(){
 // }
 
 career_title.style.animation = "animct 1s normal";
-setInterval(100);
+setInterval(100)
 career_title1.style.animation = "animct1 1s normal";
 
 function apply(){
-  location.href = "/apply";
+  location.href = "https://chattr-3--chattr.repl.co/apply"
 }
