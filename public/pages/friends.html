@@ -3,30 +3,42 @@
 <head>
 	<title>Friends - Chattr</title>
 	<link href="../css/friends.css" rel="stylesheet" type="text/css" />
+	<link href="../css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-	<script src="../js/home.js"></script>
-	<div class="top_bar"> </div>
-	<h1 class="top_text">Chattr</h1>
-	<button onclick='location.href="/home"; return false;'
-		id="home_button" type="submit" name="submit_button" value="Login">Home</button>
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+  </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+    <a href="/content"
+      id="games_button" type="submit" name="submit_button" value="Login">Content</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
+  <div class="main-container">
 
-	<button onclick='location.href="/friends"; return false;'
-		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
-
-	<button onclick='location.href="/create"; return false;'
-		id="create_button" type="submit" name="submit_button" value="Login">Create</button>
-
-	<button onclick='location.href="/games"; return false;'
-		id="games_button" type="submit" name="submit_button" value="Login">Games</button>
-
-	<button onclick='location.href="/profile"; return false;'
-		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
-
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">Settings</button>
-
-	<input id="search_bar" type="search" name="" placeholder="Search">
+  </div>
+  <div id="chat">
+    <div id="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header">
+      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -3,31 +3,92 @@
 <head>
 	<title>Profile - Chattr</title>
 	<link href="../css/profile.css" rel="stylesheet" type="text/css" />
+  <link href="../css/main.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-	<script src="../js/home.js"></script>
-	<div class="top_bar"></div>
-	<h1 class="top_text">Chattr</h1>
-	<button onclick='location.href="/home"; return false;'
-		id="home_button" type="submit" name="submit_button" value="Login">Home</button>
-
-	<button onclick='location.href="/friends"; return false;'
-		id="friends_button" type="submit" name="submit_button" value="Login">Friends</button>
-
-	<button onclick='location.href="/create"; return false;'
-		id="create_button" type="submit" name="submit_button" value="Login">Create</button>
-
-	<button onclick='location.href="/games"; return false;'
-		id="games_button" type="submit" name="submit_button" value="Login">Games</button>
-
-	<button onclick='location.href="/profile"; return false;'
-		id="profile_button" type="submit" name="submit_button" value="Login">Profile</button>
-
-	<button onclick='location.href="/settings"; return false;' id="settings_button" type="submit" name="submit_button" value="Login">Settings</button>
-
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+  </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+    <a href="/content"
+      id="games_button" type="submit" name="submit_button" value="Login">Content</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
 	<input id="search_bar" type="search" name="" placeholder="Search">
+  <div class="main-container">
+    <div class="profile_info"> 
+      <div class="profile_picture"> </div>
+      <div class="profile_info_container">
+      <h2>Bluestar3211231</h2>
+      <div class="info-container">
+        <div>
+          <p class="title">Friends</p>
+          <p>0</p>
+        </div>
+        <div>
+          <p class="title">Followers</p>
+          <p>0</p>
+        </div>
+        <div>
+          <p class="title">Following</p>
+          <p>0</p>
+        </div>
+      </div>
+      </div>
+      <div class="button-container">
+        <button class="block">Block</button>
+        <button class="follow">Follow</button>
+        <button class="add-friend">Add Friend</button>
+      </div>
+     
+    </div>
+    <div class="description_info"> 
+      <h2>Description</h2>
+      <p>Hello! My names NEFFEX(Not the rapper), you may call me Blue. You can message me if you need anything by following me. I will reply.
 
+      Coding launguages I now know:
+      Lua
+      C
+      Javascript
+      HTML - This is not an actual code launguage, its only a markup.
+      CSS - this also is not an actual coding language, its for styling.
+
+      Learning -
+      Python
+      C++
+
+      Thanks for visiting! </p>
+    </div>
+    <div class="user-content">
+      <h2>Bluestar3211231's Content</h2>
+      <div class="content">
+        <h5>Zzzz... No content to show..</h5>
+      </div> 
+    </div>
+  </div>
+  <div id="chat">
+    <div id="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header">
+      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
