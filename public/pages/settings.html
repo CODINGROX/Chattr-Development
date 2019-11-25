@@ -14,9 +14,9 @@
     <a href="/friends"
       id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
     <a href="/create"
-      id="create_button" type="submit" name="submit_button" value="Login">Create</a>
-    <a href="/games"
-      id="games_button" type="submit" name="submit_button" value="Login">Games</a>
+      id="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+    <a href="/content"
+      id="games_button" type="submit" name="submit_button" value="Login">Content</a>
     <a href="/profile"
       id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
     <input id="search_bar" type="search" name="" placeholder="Search">
@@ -31,13 +31,13 @@
           <button id="option3" onclick="openPage('security')"> Security and Login </button>
           <button id="option4" onclick="openPage('privacy')"> Privacy </button>
           <button id="option5" onclick="openPage('blocking')"> Blocking </button>
-          <button id="option6" onclick="openPage('groups')"> Groups/Games </button>
-          <button id="option7" onclick="openPage('content')"> Content Type </button>
           <button id="option8" onclick="openPage('notifications')"> Notifications </button>
+          <button id="logout" onclick="logOut()">Logout</button>
         </div>
       </div>
       <div class="container-2">
-        <div class="main_settings_page">
+        <div id="main_settings_page">
+          <div id="main_settings_page_background">
           <div class="inner-containerAC">
           <div id="profile_Customization_Page">
             <div class="inner-container">
@@ -56,26 +56,14 @@
                 <h3 id="language">Email: </h3>
                 <h3 id="language_value">example_email@gmail.com</h3>
               </div>
-            </div>
-            <div class="inner-container-a">
-              <button id="change_name">Change</button>
-              <button id="change_password">Change</button>
-              <button id="change_language">Change</button>
-
-              <button id="logout" onclick="logOut()">Logout</button>
-            </div>
-          </div>
-
-           <!-- <input id="change_name_input" type="text" name="" placeholder="user1"></h3>
-            <input id="change_password_input" type="password" name="" placeholder="password"></h3>
-
-            
-            <h2 id="title"> Your account </h2>
-            
-            <h3 id="cancel_change_name"> <u> Cancel </u> </h3>
-            <h3 id="confirm_change_name"> <u> Confirm </u> </h3>
-
-            -->
+              </div>
+              <div class="inner-container-a">
+                <button id="change_name">Change</button>
+                <button id="change_password">Change</button>
+                <button id="change_language">Change</button>
+                
+              </div>
+            </div>            
           <div class="customize_profile">
           <h2 id="title1">Customize your profile</h2>
           <h3 id="pf_picture">Profile Picture</h3> 
@@ -93,16 +81,143 @@
           </div>
           </div>
           </div>
+          </div>
+        <div id="billing_and_payments_page">
+          <div id="recent_purchases_background"> 
+            <h2 id="recent_purchases_title">Recent Purchases</h2>
+            <!-- <div id="recent_purchases_bottom-container">
+              <div id="purchases_top_bar">
+                <h4>Purchase</h4>
+                <h4>Date</h4>
+                <h4>Price</h4>
+              </div>
+              <div id="example_purchase">
+                <div id="purchase">
+                  <h4>Chattr Premium</h4>
+                </div>
+                <div id="date">
+                  <h4>11/04/19</h4>
+                </div>
+                <div id="price">
+                  <h4>$2.99</h4>
+                </div>
+              </div> -->
+              <h2 id="no_recent_purchases_title">Zzzz.. No purchases were found...</h2>
+            </div>
+          </div>
+        <div id="security_and_login_page"> 
+          <div id="slp-background">
+            <div id="slp-background-a">
+              <div id="two-step-background">
+                <div>
+                  <h2 id="two-step-title">Two-Factor Authentication</h2>
+                  <input type="checkbox" name="enable_twostep" id="enable_twostep">
+                </div>
+                  <p id="two-step-description"> Take your account to the next level in security by allowing us to send you a verification code to your email every time you log in. </p>
+              </div>
+              <div id="recent-login-background">
+                <h2 id="recent-login-title">Recent Logins</h2>
+                <p id="recent-login-description"> Check here to see a history of all devices who have recently logged into your account as well as devices that are currently active on your account. </p>
+                <div id="recent-login-partial-list">
+                  <div id="listed-value"> 
+                    <h4>Device: </h4>
+                    <p> Chrome OS</p>
+                    <h4>Date: </h4>
+                    <p>11/09/19<p>
+                  </div>
+                  <div id="listed-value"> 
+                    <h4>Device: </h4>
+                    <p> Apple Iphone 6s</p>
+                    <h4>Date: </h4>
+                    <p>11/02/19<p>
+                  </div>
+                  <div id="listed-value"> 
+                    <h4>Device: </h4>
+                    <p> Chrome OS</p>
+                    <h4>Date: </h4>
+                    <p>10/04/19<p>
+                  </div>
+                </div>
+                <button id='recent-login-button'> See more </button>
+              </div>
+            </div>
+            </div>
         </div>
-        <div id="billing_and_payments_page"> </div>
-        <div id="security_and_login_page"> </div>
-        <div id="privacy_page"> </div>
-        <div id="groups_page"> </div>
-        <div id="blocking_page"> </div>
-        <div id="content_type_page"> </div>
-        <div id="notifications_page"> </div>
+        <div id="privacy_page">
+          <div id="priv_page_container">
+            <div id="posts-background">
+              <h2 id="posts-title">Posts</h2>
+              <p id="posts-desc">The options below will allow you to choose who can and cannot see what you post on your profile.</p>
+              <select id="options" name="field">
+                <option value="1">Friends and followers</option>
+                <option value="2">Friends</option>
+                <option value="3">Nobody</option>
+              </select>
+            </div>
+            <div id="messages-background">
+              <h2 id="messages-title">Messages</h2>
+              <p id="messages-description">The options below will allow you to control who can and cannot message you</p>
+              <select id="messaging-options" name="field">
+                <option value="1">Friends and followers</option>
+                <option value="2">Only Friends</option>
+              </select>
+            </div>
+            <button id="save">Save</button>
+          </div>  
+        </div>
+        <div id="blocking_page"> 
+          <div id="blocking_page_background">
+            <h2 id="blocked_title">Blocked users</h2>
+            <h2 id="no_blocked_members">You haven't blocked anyone yet...</h2>
+          </div>
+        </div>
+        <div id="notifications_page">
+          <div id="notifications_background">
+            <div id="notifications_holder">
+              <div>
+                <h2>Notifications</h2>
+                <div>
+                  <h3 id="push_notifications">External notifications</h3>
+                  <input type="checkbox" name="enable_email" value="email">
+                </div>
+                <p id="push_desc">Allow us to send you a notification every time a friend messages, follows, or sends a friend request to you.</p>
+              <div class="notifications_container">
+                  <h3 id="push_notifications">Newsletter notifications</h3>
+                  <input type="checkbox" name="enable_email" value="email">
+                </div>
+                <p id="push_desc">Allow us to send you updates on how Chattr has changed or improved.</p>
+              </div>
+              <div>
+                <h2>Other Notifications</h2>
+                <div>
+                  <h3>Posts</h3>
+                  <input type="checkbox" name="enable_email" value="email">
+                </div>
+                <p>Receive a notification every time your friends create a new post.</p>
+                <div>
+                  <h3>Chats</h3>
+                  <input type="checkbox" name="enable_email" value="email">
+                </div>
+                <p>Receive a notification every time your friend sends you a message.</p>
+                <div>
+                  <h3>Updates</h3>
+                  <input type="checkbox" name="enable_email" value="email">
+                </div>
+                <p>Receive a notification when a game that you have followed receives updates.</p>
+              </div>
+              <button id="save">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </div>
+  <div id="chat">
+    <div id="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
   <div class="bottom-container">
     <div id="bottom_header">
       <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->

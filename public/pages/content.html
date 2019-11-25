@@ -1,0 +1,154 @@
+<html>
+<head>
+	<title>Content - Chattr</title>
+	<link href="../css/content.css" rel="stylesheet" type="text/css" />
+	<link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="top_bar">
+  <div class="top_text_holder">
+  	<img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">Chattr</h1>
+  </div>
+  <div class="links-container">
+    <a href="/friends"
+      id="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+    <a href="/create"
+      id="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+    <a href="/content"
+      id="games_button" type="submit" name="submit_button" value="Login">Content</a>
+    <a href="/profile"
+      id="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+    <input id="search_bar" type="search" name="" placeholder="Search">
+    <a href="/settings" id="settings_button" type="submit" name="submit_button" value="Login">|||</a>
+  </div>
+  </div>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="content-list">
+        <div class="content-list-a">
+        <button class="top_button" onclick="toPage('games');">Games</button>
+        <button class="videos" onclick="toPage('videos');">Videos</button>
+        <button class="music" onclick="toPage('music');">Music</button>
+        <button class="posts">Posts</button>
+        <button class="your_creations">Your creations</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div id="games-background">
+        <div class="games_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <select id="game_genres" name="genres">
+              <option value="1">Most Popular</option>
+              <option value="2">RPG</option>
+              <option value="3">FPS</option>
+              <option value="4">Adventure</option>
+            </select>
+          </div>
+          <div class="content_container-a">
+            <div class="content_container">
+              <div class="game_background">
+                <div class="game_back-left-contain">
+                  <div class="game_picture"></div>
+                </div>
+                <div class="game_back-right-contain">
+                  <h2 class="game_title">City Island</h2>
+                  <div class="game_fade_container">
+                  <div class="game_description_container">
+                    <p class="game_description">This is a fun and simple game were you are able to create your own City! You can place buildings, as well as maintain a healthy economy. The buildings you place also have a effect on your Citizens mood! Fly rockets, control airports, manage an economy, build an empire! Its your choice, enjoy!</p>
+                  </div>
+                  <div class="shadow"></div>
+                  </div>
+                  <p class="current_players">playing: 0</p>
+                  <button class="play_button">See more</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="videos_background">
+        <div class="games_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <select id="game_genres" name="genres">
+              <option value="1">Most Popular</option>
+            </select>
+          </div>
+          <div class="content_container-a">
+            <div class="content_container">
+              <div class="video_background">
+                <div class="vid_back_left_container">
+                  <div class="video_icon"> </div>
+                </div>
+                <div class="vid_back_right_container">
+                  <div class="title-container">
+                    <h2 class="video_title">The tradgedy in salemn blahblablah</h2>
+                    <div class="fade_out"></div>
+                  </div>
+                  <div class="description-container">
+                    <div class="video-description-container">
+                      <p class="video_description">The tradgedy in salemn is also known as the salemn trials, an unjust and unfair series of trials that took place in salemn massechusettesThe tradgedy in salemn is also known as the salemn trials, an unjust and unfair series of trials that took place in salemn massechusettesThe tradgedy in salemn is also known as the salemn trials, an unjust and unfair series of trials that took place in salemn massechusettes.s, an unjust and unfair series of trials that an unjust and unfair series of trials that an unjust and unfair series of trials that an unjust and unfair series of trials that</p>
+                    </div>
+                    <div class="description-shadow"></div>
+                  </div>
+                  <button class="see_more">Watch</button>                  
+                </div>
+              </div>
+              <div class="video_background">
+                <div class="vid_back_left_container">
+                  <div class="video_icon"> </div>
+                </div>
+                <div class="vid_back_right_container">
+                  <div class="title-container">
+                    <h2 class="video_title">How did the stock market crash in the 1920s?</h2>
+                    <div class="fade_out"></div>
+                  </div>
+                  <div class="description-container">
+                    <div class="video-description-container">
+                      <p class="video_description">Among the other causes of the eventual market collapse were low wages, the proliferation of debt, a struggling agricultural sector and an excess of large bank loans that could not be liquidated.</p>
+                    </div>
+                    <div class="description-shadow"></div>
+                  </div>
+                  <button class="see_more">Watch</button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="music_background">
+        <div class="music_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <select id="game_genres" name="genres">
+              <option value="1">Most Popular</option>
+            </select>
+          </div>
+          <div class="content_container-a">
+            <div class="content_container">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="chat">
+    <div id="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header">
+      <p id="jobs_tag" onclick="location.href='/jobs'">Jobs</p> <!--//change me//-->
+      <p id="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+	<script src="../js/content.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

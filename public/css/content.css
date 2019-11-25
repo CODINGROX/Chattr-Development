@@ -1,0 +1,483 @@
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgb(0, 0, 0, 0)
+}
+
+.right-container{
+  display: flex;
+  flex-direction: column;
+  flex: 3.5;
+  background-color: rgb(0, 0, 0, 0)
+}
+
+#games-background{
+  display: flex;
+  flex-direction: column;
+  height: 82vh;
+  margin: 15px;
+  margin-top: 15vh;
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.games_background{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 97%;
+  width: 98%;
+  background-color: rgb(44, 42, 42);
+  border-radius: 15px;
+}
+
+.options_bar{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(44, 42, 42, 0);  
+}
+
+.search_bar{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-color: rgb(26, 25, 25);
+  background-color: rgb(26, 25, 25, 0);
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(250, 249, 249, 0.705);
+  -webkit-text-size-adjust: 30px;
+  height: 6vh;
+  width: 25vw;
+  outline: none;
+  text-size-adjust: 30px;
+  text-indent: 6%;
+  font-size: 1vw;
+  transition: 0.3s;
+  margin-left: 80%;
+  margin-right: 2vw;
+  margin: 5px;
+}
+
+.search_bar:hover{
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+.search_bar:focus{
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+#game_genres{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-color: rgb(26, 25, 25);
+  background-color: rgb(26, 25, 25, 0);
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center left;
+  -webkit-text-fill-color: rgba(250, 249, 249, 0.705);
+  -webkit-text-size-adjust: 30px;
+  height: 6vh;
+  width: 10vw;
+  outline: none;
+  text-size-adjust: 30px;
+  border-width: 1.5px;
+  text-indent: 6%;
+  font-size: 1vw;
+  transition: 0.3s;
+  margin-left: 80%;
+  margin-right: 2vw;
+  margin: 5px;
+}
+
+#game_genres:hover{
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+#game_genres:focus{
+  background-color: rgb(49, 48, 48);
+  border-color: rgb(13, 147, 236);
+  -webkit-text-fill-color: white;
+}
+
+.content_container-a{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgb(44, 42, 42, 0);
+}
+
+.content_container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(44, 42, 42, 0);
+}
+
+
+.game_background{
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  margin: 8px;
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.game_background:hover{
+  transform: scale(1.01);
+  box-shadow: 10px 5px 5px black;
+}
+
+.video_background{
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+  margin: 8px;
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  overflow: hidden;
+  overflow-x: hidden; 
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.video_background:hover{
+  transform: scale(1.01);
+  box-shadow: 10px 5px 5px black;
+}
+
+.game_back-left-contain{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0);
+  justify-content: center;
+  height: 100%;
+  flex: 0.2;
+}
+
+.game_back-right-contain{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0);
+  flex: 1;
+}
+
+.game_picture{
+  display: flex;
+  flex-direction: row;
+  height: 95%;
+  width: 70%;
+  margin: 8px;
+  background-color: rgb(30, 29, 29);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+.game_title{
+  border-style: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.3vw;
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  width: 20%;
+  margin-left: 25px;
+  visibility: visible;
+}
+
+.game_fade_container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-left: 5%;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.game_description_container{
+  background-color: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  height: 100%; /*60%*/
+}
+
+.shadow{
+  height: 0px;
+  background-color: rgb(0, 0, 0, 0);
+  box-shadow: 0px 2px 9px 13px rgb(20, 19, 19);
+}
+
+.game_description{
+  border-style: none;
+  color: grey;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vw; /*1.3vw*/
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  margin: 0px; /*15px;*/
+  margin-top: 2%; /*2px*/
+  visibility: visible;
+}
+
+.current_players{
+  border-style: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.1vw;
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  width: 10%;
+  margin-left: 50px;
+  margin-right: 50px;
+  visibility: visible;
+}
+
+.play_button{
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 25px;
+  border-style: none;
+  height:35%; /*15%*/
+  width:15%; /*95%*/
+  margin-right: 3%;
+  text-align: center;
+  background-color: rgb(224, 111, 4);
+  font-size:  1.3vw;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  transition: 0.3s;
+  visibility: visible;
+}
+
+.play_button:hover{
+  background-color: rgb(250, 123, 3);
+}
+
+#videos_background{
+  display: flex;
+  flex-direction: column;
+  height: 0vh; /*82vh*/
+  margin: 0px; /*15px*/
+  margin-top: 0vh; /*15vh*/
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.vid_back_left_container{
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  background-color: rgb(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.video_icon{
+  display: flex;
+  width: 97%;
+  height: 95%;
+  border-radius: 15px;
+  background-color: rgb(30, 29, 29);
+  align-self: center;
+}
+
+.title-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  width: 90%;
+  height: 20%;
+  background-color: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  align-self: center;
+}
+
+.description-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  height: 50%; /*60%*/
+  width: 90%;
+  align-self: center;
+}
+
+.description-shadow{
+  height: 0px;
+  background-color: rgb(0, 0, 0, 0);
+  box-shadow: 0px 2px 9px 13px rgb(20, 19, 19);
+}
+
+.video_description{
+  border-style: none;
+  color: grey;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vw; /*1.3vw*/
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  margin: 0px; /*15px;*/
+  margin-top: 2%; /*2px*/
+  visibility: visible;
+}
+
+.video-description-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  height: 90%; /*60%*/
+}
+
+.fade_out{
+  width: 0px;
+  background-color: rgb(0, 0, 0, 0);
+  box-shadow: 0px 2px 25px 43px rgb(20, 19, 19);
+}
+
+.video_title{
+  border-style: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.3vw;
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.vid_back_right_container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.see_more{
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 25px;
+  border-style: none;
+  margin-top: 5px;
+  height:15%; /*15%*/
+  width:85%; /*95%*/
+  margin-right: 3%;
+  text-align: center;
+  background-color: rgb(224, 111, 4);
+  font-size:  1.3vw;
+  outline: none;
+  cursor: pointer;
+  align-self: center;
+  transition: 0.3s;
+  visibility: visible;
+}
+
+#music_background{
+  display: flex;
+  flex-direction: column;
+  height: 0vh; /*82vh*/
+  margin: 0px; /*15px*/
+  margin-top: 0vh; /*15vh*/
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.music_background{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 97%;
+  width: 98%;
+  background-color: rgb(44, 42, 42);
+  border-radius: 15px;
+}
+
+.content-list{
+  display: flex;
+  flex-direction: column;
+  height: 82vh;
+  margin: 15px;
+  margin-top: 15vh;
+  background-color: rgb(20, 19, 19);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-list-a{
+  display: flex;
+  flex-direction: column;
+  height: 97%;
+  width: 94%;
+  background-color: rgb(44, 42, 42);
+  border-radius: 15px;
+}
+
+.content-list > div > button{
+  height: 8vh;
+  border-style: none;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3vw;
+  background-color: rgb(20, 19, 19, 0);
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.top_button{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.top_button:hover{
+  background-color: rgb(4, 209, 4);
+}
+
+.videos:hover{
+  background-color: red;
+}
+
+.music:hover{
+  background-color: rgb(177, 180, 1);
+}
+
+.posts:hover{
+  background-color: rgb(12, 209, 223);
+}
+
+.your_creations:hover{
+  background-color: rgb(223, 125, 12);
+}

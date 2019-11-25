@@ -78,6 +78,7 @@ html, body {
   justify-content: center;
   align-items: center;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .containerb{
