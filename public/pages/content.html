@@ -1,0 +1,279 @@
+<html>
+<head>
+	<title>Content - Chattr</title>
+	<link href="../css/content.css" rel="stylesheet" type="text/css" />
+	<link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="dropdown" id="dropdown">
+    <div class="dropdown-background" id="dropdown-background">
+      <div class="container1">
+        <div class="slide"></div>
+        <a href="/settings" id="settings" class="settings" type="submit" name="submit_button" value="Login">Settings</a>
+      </div>
+      <div class="container">
+        <div class="slide"></div>
+        <a href="/settings" id="purchase" class="purchase" type="submit" name="submit_button" value="Login">Purchase</a>
+      </div>
+      <div class="container3">
+        <div class="slide3"></div>
+        <a id="lgout" class="lgout" onclick="logOut();">Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav_bar">
+    <div class="top_text_holder">
+      <img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
+    </div>
+    <div class="links-container">
+      <div class="link-container">
+        <a href="/friends"
+          id="friends_button" class="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/chat" id="create_button" class="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/content" id="content_button" class="content_button" type="submit" name="submit_button" value="Login">Content</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/profile" id="profile_button" class="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+        <div class="background-slider" id="background-slider"></div> 
+      </div>
+      <input id="search_bar" class="search_bar" type="search" name="" placeholder="Search">
+      <a id="optns" class="optns">|||</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="left-container">
+      <div class="content-list">
+        <div class="content-list-a">
+          <div class="button-container">
+            <div class="slide1" id="slide1"></div>
+            <button class="top_button" id="top_button" onclick="toPage('games');">Games</button>
+          </div>
+          <div class="button-container">
+            <div class="slide1" id="slide1"></div>
+            <button class="videos" id="videos" onclick="toPage('videos');">Videos</button>
+          </div>
+          <div class="button-container">
+            <div class="slide1" id="slide1"></div>
+            <button class="music" id="music" onclick="toPage('music');">Music</button>
+          </div>
+          <div class="button-container">
+            <div class="slide1" id="slide1"></div>
+            <button class="posts" id="posts" onclick="toPage('posts')">Posts</button>
+          </div>
+          <div class="button-container">
+            <div class="slide1" id="slide1"></div>
+            <button class="your_creations" id="your_creations" onclick="toPage('creations')">Your creations</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div id="games-background">
+        <div class="games_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <div class="game_genres" id="game_genres" name="genres">Most Popular</div>
+            <button class="upload">+</button>
+            <div class="posts-options" id="posts-options">
+              <div class="container-value-1">
+                <div class="sliderOptions"></div>
+                <div value="1" id="optionA1">Most Popular</div>
+              </div>
+              <div class="container-value-2">
+                <div class="sliderOptions"></div>
+                <div value="2" id="optionA2">RPG</div>
+              </div>
+              <div class="container-value-3">
+                <div class="sliderOptions"></div>
+                <div value="3" id="optionA3">FPS</div>
+              </div>
+              <div class="container-value-3">
+                <div class="sliderOptions"></div>
+                <div value="3" id="optionA4">Adventure</div>
+              </div>
+            </div> 
+            
+          </div>
+          <div class="content_container-a">
+            
+          </div>
+          <h2>No games have been found...</h2>
+        </div>
+      </div>
+      <div id="videos_background">
+        <div class="games_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <div class="game_genres" id="video_genres" name="genres">Most Popular</div>
+            <button class="upload">+</button>
+            <div class="posts-options" id="video-options">
+              <div class="container-value-1">
+                <div class="sliderOptions"></div>
+                <div value="1" id="optionA5">Most Popular</div>
+              </div>
+              <div class="container-value-2">
+                <div class="sliderOptions"></div>
+                <div value="2" id="optionA6">Your Favorites</div>
+              </div>
+              <div class="container-value-3">
+                <div class="sliderOptions"></div>
+                <div value="3" id="optionA7">Recently Watched</div>
+              </div>
+              
+            </div> 
+          </div>
+          <div class="content_container-a">
+            
+          </div>
+          <h2>No videos have been found...</h2>
+        </div>
+      </div>
+      <div id="music_background">
+        <div class="music_background"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <div class="game_genres" id="music_genres" name="genres">Most Popular</div>
+            <button class="upload">+</button>
+            <div class="posts-options" id="music-options">
+              <div class="container-value-1">
+                <div class="sliderOptions"></div>
+                <div value="1" id="optionA8">Most Popular</div>
+              </div>
+              <div class="container-value-2">
+                <div class="sliderOptions"></div>
+                <div value="2" id="optionA9">Your Favorites</div>
+              </div>
+              <div class="container-value-3">
+                <div class="sliderOptions"></div>
+                <div value="3" id="optionB1">Recently Watched</div>
+              </div>
+            </div> 
+          </div>
+          <div class="content_container-a">
+            
+          </div>
+          <h2>No music has been found...</h2>
+        </div>
+      </div>
+      <div id="posts_background">
+        <div class="post_back"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <div class="game_genres" id="post_genres" name="genres">Most Popular</div>
+            <button class="upload">+</button>
+            <div class="posts-options" id="post-options">
+              <div class="container-value-1">
+                <div class="sliderOptions"></div>
+                <div value="1" id="optionB2">Most Popular</div>
+              </div>
+              <div class="container-value-2">
+                <div class="sliderOptions"></div>
+                <div value="2" id="optionB3">Top Content Creators</div>
+              </div>
+              <div class="container-value-3">
+                <div class="sliderOptions"></div>
+                <div value="3" id="optionB4">Trending</div>
+              </div>
+            </div>
+          </div>
+          <div class="content_container-a">
+            
+          </div>
+          <h2>No posts have been found...</h2>
+        </div>
+      </div>
+      <div id="creations_background">
+        <div class="creations_back"> 
+          <div class="options_bar">
+            <input class="search_bar" type="search" placeholder="Search">
+            <div class="game_genres" id="creations_genres" name="genres">All</div>
+            <button class="upload">+</button>
+            <div class="posts-options" id="creations-options">
+              <div class="container-value-1">
+                <div class="sliderOptions"></div>
+                <div value="1" id="optionB5">All</div>
+              </div>
+              <div class="container-value-2">
+                <div class="sliderOptions"></div>
+                <div value="2" id="optionB6">Most Popular</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="content_container-a">
+            <div class="content_container" id="content_container_posts-A">
+              
+            </div>
+
+          </div>
+          <h2>You have no creations...</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="music-player" id="music-player-back">
+    <div class="music_player_picture"></div>
+    <div class="music-player-title-container">
+      <h2 class="music-player-title" id="music-player-title">Title</h2>
+      <div class="fade_outa"></div>
+    </div>
+    <div class="play_music_container">
+      <div class="rewind_music-a"></div>
+      <div class="rewind_music-b"></div>
+      <div id="music-player-play" class="music-player-play" onclick="musicPlayerPlayClicked()">
+        <input type="checkbox" value="" id="debounce" name="playPauseCheckbox" />
+        <div id="playing"></div>
+        <!--<label for="playPauseCheckbox"></label> -->
+      </div>
+      <div class="fastforward_music-a"></div>
+      <div class="fastforward_music-b"></div>
+      <div class="music-player-range-container">
+        <div class="progress-div">
+          <input type="range" min="0" max="100" value="0"  class="music-player-range" id="music-player-knob" onclick="slide2();"/>
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <p class="time">0:00</p>
+      <img src="https://media.discordapp.net/attachments/611251758177452084/649982497656012811/auduio.png" class="img">
+      <div class="music-sound-range-container">
+        <div class="sound-progress-div">
+          <input type="range" min="0" max="100" value="90" class="music-sound-range" id="sound-knob"/>
+          <div class="progress" id="sound-progress"></div>
+        </div>
+      </div>
+      <div class="minimize_container">
+        <p class="minimize" id="minimize" onclick="minimizeBlock()">_</p>
+      </div>
+    </div>
+  </div>
+  <div id="chat" class="chat">
+    <div id="chat-head" class="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="music-chat" id="music-chat">
+    <div id="music-chat-head" class="music-chat-head" onclick="music_headclicked();">
+      <h3>Music</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header" class="bottom_header">
+      <div class="row_container">
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/jobs'">Jobs</p>
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/help'">Help</p>
+      </div>
+      <p id="copyright" class="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+	<script src="../js/content.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

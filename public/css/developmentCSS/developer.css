@@ -1,0 +1,132 @@
+*{
+  background-color: rgb(31, 30, 30);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#top_background{
+  background-color: rgb(26, 25, 25);
+  position: fixed;
+  margin: 0;
+  width: 99%;
+  height: 21%;
+  bottom: 89%;
+  right: 0.6%;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+#top_text{
+  color: white;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  top: -1%;
+  
+  left: 2%;
+  height: 5%;
+  width: 20%;
+  outline: none;
+  background-color: rgb(26, 25, 25, 0);
+  font-size: 2.4vw;
+}
+
+#security_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 33.07%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#security_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#developer_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 22.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#developer_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#managment_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 11.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+}
+
+#managment_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}
+
+#tasks_button{
+  position: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0;
+  border-style: none;
+  height: 11%;
+  width: 11%;
+  top: 0%;
+  right: 0.7%;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+  font-weight: 900;
+  font-size:  1.25vw;
+  border-bottom-right-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+#tasks_button:hover{
+  background-color: rgb(0, 215, 0);
+  color: black;
+  transition: 0.3s
+}

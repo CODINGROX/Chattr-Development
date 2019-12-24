@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<title>Friends - Chattr</title>
+	<link href="../css/friends.css" rel="stylesheet" type="text/css" />
+	<link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	
+<body>
+  <div class="dropdown" id="dropdown">
+    <div class="dropdown-background" id="dropdown-background">
+      <div class="container1">
+        <div class="slide"></div>
+        <a href="/settings" id="settings" class="settings" type="submit" name="submit_button" value="Login">Settings</a>
+      </div>
+      <div class="container">
+        <div class="slide"></div>
+        <a href="/settings" id="purchase" class="purchase" type="submit" name="submit_button" value="Login">Purchase</a>
+      </div>
+      <div class="container3">
+        <div class="slide3"></div>
+        <a id="lgout" class="lgout" onclick="logOut();">Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav_bar">
+    <div class="top_text_holder">
+      <img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
+    </div>
+    <div class="links-container">
+      <div class="link-container">
+        <a href="/friends"
+          id="friends_button" class="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/chat" id="create_button" class="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/content" id="content_button" class="content_button" type="submit" name="submit_button" value="Login">Content</a>
+        <div class="background-slider" id="background-slider" class="background-slider"></div> 
+      </div>
+      <div class="link-container">
+        <a href="/profile" id="profile_button" class="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+        <div class="background-slider" id="background-slider"></div> 
+      </div>
+      <input id="search_bar" class="search_bar" type="search" name="" placeholder="Search">
+      <a id="optns" class="optns">|||</a>
+    </div>
+  </div>
+  <div class="main-container">
+
+  </div>
+  <div id="chat" class="chat">
+    <div id="chat-head" class="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header" class="bottom_header">
+      <div class="row_container">
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/jobs'">Jobs</p>
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/help'">Help</p>
+      </div>
+      <p id="copyright" class="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

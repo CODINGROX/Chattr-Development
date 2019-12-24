@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home - Chattr</title>
+    <link href="../css/home.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+  </head>	
+  <body>
+    <div class="dropdown" id="dropdown">
+      <div class="dropdown-background" id="dropdown-background">
+        <div class="container1">
+          <div class="slide"></div>
+          <a href="/settings" id="settings" class="settings" type="submit" name="submit_button" value="Login">Settings</a>
+        </div>
+        <div class="container">
+          <div class="slide"></div>
+          <a href="/settings" id="purchase" class="purchase" type="submit" name="submit_button" value="Login">Purchase</a>
+        </div>
+        <div class="container3">
+          <div class="slide3"></div>
+          <a id="lgout" class="lgout" onclick="logOut();">Logout</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav_bar">
+      <div class="top_text_holder">
+        <img src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
+      </div>
+      <div class="links-container">
+        <div class="link-container">
+          <a href="/friends"
+            id="friends_button" class="friends_button" type="submit" name="submit_button" value="Login">Friends</a>
+          <div class="background-slider" id="background-slider" class="background-slider"></div> 
+        </div>
+        <div class="link-container">
+          <a href="/chat" id="create_button" class="create_button" type="submit" name="submit_button" value="Login">Chat</a>
+          <div class="background-slider" id="background-slider" class="background-slider"></div> 
+        </div>
+        <div class="link-container">
+          <a href="/content" id="content_button" class="content_button" type="submit" name="submit_button" value="Login">Content</a>
+          <div class="background-slider" id="background-slider" class="background-slider"></div> 
+        </div>
+        <div class="link-container">
+          <a href="/profile" id="profile_button" class="profile_button" type="submit" name="submit_button" value="Login">Profile</a>
+          <div class="background-slider" id="background-slider"></div> 
+        </div>
+        <input id="search_bar" class="search_bar" type="search" name="" placeholder="Search">
+        <a id="optns" class="optns">|||</a>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="left-container">
+        <div id="status" class="status">
+          <div id="status_background" class="status_background">
+            <h3 id="title" class="title"></h3>
+            <div class="status-bar">
+              <div class="emoji-bar">
+                <div class="emoji-1"> </div>
+                <div class="emoji-2"> </div>
+                <div class="emoji-3"> </div>
+                <div class="emoji-5"> </div>
+              </div>
+              <input id="add_status" class="add_status" type="text" name="" placeholder="How are you feeling today?">
+            </div>
+          </div>
+        </div>
+        <div class="bottom-container">
+        <div class="recent_posts">
+          <div class="recent_posts_background">   
+            <h3 class="background_posts_title">Zzzz.. No recent posts..</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="right-container">
+        <div id="friends" class="friends">
+          <div class="background_friends"> 
+            <h3 class="background_friends_title" id="background_friends_title"></h3>
+            <button id="friends_button_" class="friends_button_" onclick="location.href='/friends'">Find friends!</button>
+          </div>
+        </div>
+        <div class="recent_games">
+          <div class="recent_games_background">
+            <h3 class="title_1">Create games today!</h3>
+            <div class="bottom-div">
+              <div class="bottom-left-div">
+                <div id="pic_1" class="pic_1"><p class="studio_text">With a wide range of selections to choose from, our studio gives you many tools as a developer, such as realistic physics and a wide range of programming languages, allowing you to create virtually anything that you can think of.</p></div>
+                <div id="create_games_background" class="create_games_background">
+                  <button class="create_button_">Download studio v0.0.1 </button>
+                </div>
+              </div>
+              <div class="bottom-right-div">
+                <div id="pic_2" class="pic_2"> </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div id="chat" class="chat">
+    <div id="chat-head" class="chat-head" onclick="chat_headclicked();">
+      <h3>Chat</h3>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header" class="bottom_header">
+      <div class="row_container">
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/jobs'">Jobs</p>
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/help'">Help</p>
+      </div>
+      <p id="copyright" class="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+    <script src="../js/home.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

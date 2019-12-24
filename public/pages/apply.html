@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+    <title>Applications - Chattr</title>
+    <link href="../css/apply.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="top_background">
+      <h1 id="top_text" onclick="location.href='/home'">Chattr - Join us</h1>
+    </div>
+    <form action="/reseme" method="post" autocomplete="off">
+    <div class="container">
+      <div class="containera">
+        <div class="application_background">
+          <div class="containerb" style="order: 1;">
+            <h2 id="title_text">Application</h2>
+          </div>
+          <div class="containerc" style="order: 1;">
+            <div class="inner-container1">
+              <h3 id="name_title">*First Name:</h3>
+              <input type="text" name="firstname" id="first_name">
+            </div>
+            <div class="inner-container2">
+              <h3 id="lastname_title">*Last Name:</h3>
+              <input type="text" name="lastname" id="last_name">
+            </div>
+          </div>
+          <div class="containerd" style="order: 2;">  
+              <div class="inner-container3">
+                <h3 id="email_title">*Email:</h3>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="inner-container4">
+                <h3 id="feild_title">Field:</h3>
+                <select id="feild" name="field">
+                  <optgroup id="options" label="Career">
+                    <option value="1">Frontend Developer</option>
+                    <option value="2">Backend Developer</option>
+                    <option value="3">Security</option>
+                    <option value="4">Support Team</option>
+                    <option value="5">Website design and maintenance</option>
+                  </optgroup>
+                </select>
+              </div>
+          </div>
+          <div class="containere" style="order:3;">
+          <h3 id="resume_title">Resume:</h3>
+          <div id="resume">
+            <input type="text" name="resume" id="resume1" placeholder="Link or Attach file">
+            <input type="file" name="resumeattatch" id="resumeattachment1" style="display: none;">
+            <input type="button" id="resumeattachment" value="+" onclick="document.getElementById('resumeattachment1').click();">
+          </div>
+          </div>
+          <div class="containerf" style="order:4;">
+          <h3 id="letter_title">Cover Letter:</h3>
+            <div id="letter">
+              <input type="text" name="letter" id="letter1" placeholder="Link or Attach file">
+              <input type="file" name="letterattatch" id="letterattachment_2" style="display: none;">
+              <input type="button" id="letterattachment" value="+" onclick="document.getElementById('letterattachment_2').click();">
+            </div>
+          </div>
+          <div class="containerg" style="order:5;">
+            <input type="submit" name="submit" id="submit_button" value="Submit" onclick="submit_app();">
+          </div>
+    <script src="../js/apply.js"> </script>    
+  </body>
+</html>

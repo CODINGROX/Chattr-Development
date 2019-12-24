@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Chattr</title>
+	<link href="../css/loginstyle.css" rel="stylesheet" type="text/css" />
+  <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+		<div class="background">
+			<div class="top_background">        
+         <div id="Log_In">
+          <img id="top_text" src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
+          <form autocomplete='false' action="/home" method="post" onsubmit="createCookies();">
+            <input id="Login" type="text" name="name" placeholder="Username">
+            <input id="Password" type="password" name="password" placeholder="Password">
+            <input id="login_button" type="submit" value="Login">
+          </form>
+        </div>
+      </div>
+		</div>
+    <div class="main-container">
+	  <form autocomplete='false' action="/register", method="post", onsubmit="createCookiesforRegistration();">		
+    <div class="top-container">
+      <div id="Special_Div"> </div>
+      <div id="Desc_Background"> 
+        <div id="Desc1_Background"> </div>
+      </div>
+      <div id="register_Background">
+        <h2 id="NoAccountText">No account? Register here for free!</h2>
+        <input id="Register" type="text" name="registerName" placeholder="Username">
+        <input id="Email" type="email" name="registerEmail" placeholder="Email">
+        <input id="Password1" type="password" name="registerPassword" placeholder="Password">
+        <input id="Password2" type="password" name="" placeholder="Re-enter password">
+        <input id="RegisterButton" type="submit" name="" value="Register">
+      </div>
+      </form>
+    </div>
+    <div class="bottom-container">
+      <div id="Desc2_Background">
+        <p id="Description">
+          Welcome to Chattr, a free online website where you can chat, create large groups, or even play
+          and design games all in a safe online enviorment, for free! We will be enableing our users to be able to create or play games, advertise there buisnesses and/or products, create events, chat to other users and more! If you have any questions or concerns
+          you may email us at chattrresources@gmail.com.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div id="bottom_header" class="bottom_header">
+      <div class="row_container">
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/jobs'">Jobs</p>
+        <p id="jobs_tag" class="jobs_tag" onclick="location.href='/help'">Help</p>
+      </div>
+      <p id="copyright" class="copyright">@ Copyright 2019 Chattr</p>
+    </div>
+  </div>
+	<script src="../js/script.js"></script>
+	<script src="../js/login.js"></script>
+</body>
+</html>

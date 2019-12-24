@@ -1,0 +1,613 @@
+h1, h2, h3, h4, h5, p, a, .attach-file, .chat-box, .extra-options p, .new-chat-text, .chat[id^="recipient"] > text, .chat[id^="sender"] > text, find_friends h2, .friends_button_A b, .conversation-background > b{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background: rgb(0, 0, 0, 0);
+}
+
+.left-container, .right-container, .chats-background-container, .chats-background-container > div, .conversation-background, .conversation-header, .recipient-name, .attach-file, .chat-box-background, .recipient-options-container, .convo-info-container, .extra-options, .updates-container, .update-details, .emojis, .search, .video-call, .chat-holder, .chat[id^="recipient"], .chat[id^="sender"], .find_friends{
+  display: flex;
+  flex-direction: column;
+}
+
+b::selection, h2::selection, button::selection{
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.5%;
+  height: 90vh;
+}
+
+.left-container{
+  flex: 1.3;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-information{
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(54, 53, 53, 0);
+  height: 100%;
+  width: 70%;
+}
+
+.chats-background-container{
+  border-radius: 10px;
+  background-color: rgb(21, 20, 20);
+  height: 85vh;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  width: 92%;
+  justify-content: center;
+  align-items: center;
+}
+
+.chats-container{
+  border-radius: 10px;
+  background-color: rgb(54, 53, 53);
+  width: 93%; height: 96.59%;
+}
+
+.chats-container > div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(54, 53, 53);
+  width: 100%; height: 10vh;
+}
+
+.chats-container > div:hover{
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.chats-container > div + div{
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: rgb(54, 53, 53);
+  width: 100%; height: 10vh;
+}
+
+.chats-container > div > div > h2[class="username"]{
+  font-size: 1.3vw;
+  margin: .2vw;
+  margin-top: .5vw;
+}
+
+.chats-container > div > div > p[class="recent-chat"]{
+  overflow: hidden;
+  color: grey;
+  font-size: 0.9vw;
+  margin: .2vw;
+  height: 1.8vh;
+}
+
+.userpicture{
+  align-self: center;
+  background-color: rgb(71, 70, 70);
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.right-container{
+  flex: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation-background{
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(21, 20, 20);
+  height: 85vh; width: 76vw;
+  margin-top: 2vh;
+}
+
+.conversation-header{
+  flex-direction: row;
+  margin: 5px;
+  margin-bottom: 0px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgb(54, 53, 53);
+  height: 8vh; width: 99%;
+  border-color: rgb(21, 20, 20);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  align-items: center;
+  z-index: 201;
+}
+
+.conversation{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(54, 53, 53, 0);
+  height: 64.8vh;
+  width: 98%;
+}
+
+.chat-box-background{
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: rgb(54, 53, 53);
+  width: 98%;
+  max-height: 14.5vw;
+  min-height: 3.7vw;
+  margin-bottom: 0.5vh;
+  margin-top: 2vh;
+  align-items: center;
+  z-index: 201;
+}
+
+.attach-file{
+  background-color: rgb(71, 70, 70);
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  color: rgb(54, 53, 53);
+  font-size: 2vw;
+}
+
+.attach-file:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+.chat-box-container{
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  background-color: rgb(54, 53, 53, 0);
+  width: 66.5vw;
+  height: 90%;
+  overflow: hidden;
+  color: grey;
+  margin-left: 2%;
+  outline: none;
+  font-size: 1.1vw;
+  justify-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+}
+
+.chat-box{
+  display: inline-block;
+  flex-direction: column;
+  border-style: none;
+  background-color: rgb(54, 53, 53, 0);
+  width: 65vw;
+  min-height: 40%;
+  margin-top: 2vh;
+  margin-bottom: 2vh; 
+  overflow: visible;
+  color: grey;
+  outline: none;
+  font-size: 1.1vw;
+  justify-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
+
+}
+
+.chat-box div{
+  background-color: rgb(71, 70, 70, 0);
+}
+
+.chat-box:hover{
+  cursor: text;
+}
+
+.chat-box:focus{
+  color: white;
+}
+
+.chat-box[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-text)
+}
+
+.recipient-name{
+  justify-content: center;
+  margin-left: 1vw;
+  max-width: 70%;
+  height: 100%;
+}
+
+.recipient-options-container{
+  flex-direction: row-reverse;
+  align-self: right;
+  justify-self: center;
+  align-items: center;
+  background-color: rgb(54, 53, 53, 0);
+  height: 100%;
+  flex: 4;
+}
+
+.recipient-options-container > div{
+  background-color: rgb(71, 70, 70);
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+
+.recipient-options-container > div:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+.user-picture{
+  justify-self: center;
+  background-color: rgb(71, 70, 70);
+  height: 2.9vw;
+  width: 2.9vw;
+  border-radius: 50%;
+  margin-right: 0.1444%;
+  margin-left: 1vw;
+}
+
+.last-active{
+  color: rgba(128, 128, 128, 0.863);
+  font-size: 0.9vw;
+  margin-right: 0.1444%;
+  margin-left: 2%;
+}
+
+.convo-info-container{
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(54, 53, 53, 0);
+  height: 100%;
+  flex: 4;
+}
+
+.slider{
+  position: relative;
+  background-color: rgb(13, 147, 236);
+  overflow: visible;
+  left: 0%;
+  height: 100%;
+  width: 5%;
+  cursor: pointer;
+  z-index: 500;
+}
+
+@keyframes slide2in{
+  from{width: 0%; left: 0%;}
+  to{width: 1.5%; left: 0%;}
+}
+
+@keyframes slide2out{
+  from{width: 1.5%; left: 0%;}
+  to{width: 0%; left: 0%;}
+}
+
+.extra-options{
+  justify-content: center;
+  align-items: center;
+}
+
+.extra-options p{
+  font-size: 1.63vw;
+  transform: rotate(90deg);
+}
+
+.updates-container{
+  background-color: rgb(54, 53, 53, 0);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.update-details{
+  background-color: rgb(54, 53, 53, 0);
+  justify-content: center;
+  align-items: left;
+  width: 45%;
+  height: 12vh;
+}
+
+.updates-container > h2{
+  margin-bottom: 1vh;
+  font-size: 2.5vw;
+  color: rgba(245, 239, 239, 0.507);
+}
+
+.update-details > p{
+  margin: 3px;
+  font-size: 1vw;
+  color: rgba(243, 240, 240, 0.4);
+}
+
+.update-details > h2{
+  margin: 2px;
+  font-size: 1.4vw;
+  color: rgba(247, 242, 242, 0.507);
+}
+
+.new-user-picture{
+  justify-self: center;
+  background-color: rgb(71, 70, 70);
+  height: 5.9vw;
+  width: 5.9vw;
+  border-radius: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.emojis{
+  background-color: rgb(71, 70, 70);
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  color: rgb(54, 53, 53);
+  font-size: 2vw;
+  transition: 0.1s
+}
+
+.emojis img{
+  background-color: rgb(71, 70, 70, 0);
+  width: 85%;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  color: rgb(54, 53, 53, 0);
+  font-size: 2vw;
+}
+
+.emojis:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+.search{
+  justify-content: center;
+  align-items: center;
+}
+
+.search img{
+  background-color: rgb(71, 70, 70, 0);
+  width: 80%;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  color: rgb(54, 53, 53, 0);
+  font-size: 2vw;
+}
+
+.video-call{
+  justify-content: center;
+  align-items: center;
+}
+
+.video-call img{
+  background-color: rgb(71, 70, 70, 0);
+  width: 70%;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  color: rgb(54, 53, 53, 0);
+  font-size: 2vw;
+}
+
+.chat-holder{
+  background-color: rgb(71, 70, 70, 0);
+  color: rgb(54, 53, 53, 0);
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.chat[id^="sender"], .chat[id^="recipient"]{
+  margin: 2px;
+  min-width: 2vw;
+  max-width: 60%;
+  min-height: 3vw;
+  max-height: 9999vw;
+  border-radius: 15px;
+  align-self: flex-end;
+  justify-content: center;
+  align-content: left;
+  overflow: unset;
+  
+  background-color: rgba(3, 102, 141, 0.986);
+}
+
+.chat[id^="recipient"]{
+  align-self: flex-start;
+
+}
+
+.chat[id^="sender"]{
+  align-self: flex-end;
+}
+
+.chat[id^="recipient"] > p, .chat[id^="sender"] > p{
+  font-size: 1.3vw;
+  margin: 0.5vw;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
+  align-self: flex-start;
+  justify-content: center;
+  align-content: left;
+  color: rgb(204, 204, 204);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  width: 92%;
+}
+
+.chat[id^="recipient"]:hover, .chat[id^="sender"]:hover{
+  transform: scale(1);
+  cursor: default;
+}
+
+.chat[id^="recipient"] > div, .chat[id^="sender"] > div{
+  background-color: rgb(71, 70, 70, 0);
+}
+
+.extra-options-container{
+  background-color: rgb(54, 53, 53);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  top: -30vh; right: 2vw;
+  width: 13vw; 
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.extra-options-container > div {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(54, 53, 53, 0);
+  width: 100%; height: 8vh;
+  overflow: hidden;
+}
+
+.extra-options-container > div > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4vw;
+  height: 100%;
+  width: 95%;
+}
+
+.extra-options-container > div > div{
+  background-color: rgb(13, 147, 236);
+  overflow: visible;
+  justify-self: flex-start;
+  align-self: flex-start;
+  height: 100%;
+  width: 0%;
+  cursor: pointer;
+}
+
+.extra-options-container > div > div[id="back-slider-block"]{
+  background-color: red;
+}
+
+@keyframes optionsin{
+  from{top: -30vh; height: 0%;}
+  to{top: 24vh; height: 0%;}
+}
+
+@keyframes optionsout{
+  from{top: 24vh;}
+  to{top: -30vh;}
+}
+
+.search-bar-container{
+  background-color: rgb(54, 53, 53);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  top: -30vh; right: 2vw;
+  width: 23vw; height: 3.2vw;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.chat-search-bar{
+  width: 98%;
+  height: 90%;
+  border: solid 2px grey;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0, 0);
+  color: grey;
+  text-indent: 3px;
+  outline: none;
+}
+
+.chat-search-bar:hover, .chat-search-bar:focus{
+  border-color: white;
+  color: white;
+}
+
+.fade_out{
+  width: 97%;
+  height: 0;
+  background-color: rgb(0, 0, 0, 0);
+  box-shadow: 0px 1px 8px 10px rgb(20, 19, 19);
+  z-index: 199;
+}
+
+.fade_out2{
+  width: 97%;
+  height: 0;
+  background-color: rgb(0, 0, 0, 0);
+  box-shadow: 0px 1px 8px 10px rgb(20, 19, 19);
+  z-index: 199;
+}
+
+.find_friends{
+  width: 100%;
+  height: 45%;
+  margin-bottom: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.4vw;
+  text-align: center;
+  cursor: default;
+}
+
+.friends_button_A{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 7vh;
+  margin-top: 5vh;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: rgb(32, 175, 3);
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2vw;
+}
+
+.conversation-background > b{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1vw;
+  color: rgb(63, 63, 63);
+  text-align: center;
+  cursor: default;
+}

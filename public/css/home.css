@@ -1,0 +1,371 @@
+*{
+  overflow-x: hidden
+}
+
+a, h1, h2, h3, p, div, input{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  caret-color: white;
+}
+
+.pic_1, .pic_2, .create_games_background, .status, .add_status, .recent_posts, .recent_games, .friends{
+  border-radius: 10px;
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+
+.background_friends, .status_background, .recent_posts_background, .recent_games_background{
+  background-color: rgb(54, 53, 53);
+  color: white;
+}
+
+input:hover, :focus{
+  border-color: rgb(13, 147, 236);
+}
+
+.create_button_:hover, .friends_button_:hover{
+  background-color: rgb(38, 184, 2);
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 90vh;
+  width: 100vw;
+  margin-top: 5vh;
+  overflow: hidden;
+  background-color: rgb(26, 25, 25, 0);
+}
+
+.main-container .left-container, .right-container{
+  display: flex;
+  flex-direction: column;
+  background: rgb(26, 25, 25, 0);
+  overflow: hidden;
+  margin-top: 3vh;
+}
+
+.left-container{
+  height: 95vh;
+  flex: 1.18;
+}
+
+.left-container div, input{
+  display: flex;
+}
+
+.right-container{
+  height: 95vh;
+  flex: 2;
+  justify-content: center;
+  align-content: center;
+}
+
+.status{
+  flex-direction: row;
+  overflow: hidden;
+  margin-top: 5vh;
+  width:36vw;
+  height: 30vh;
+  border-radius: 15px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.status-bar{
+  flex-direction: column-reverse;
+  overflow: visible;
+  color: white;
+  width: 100%;
+  margin-top: 2.5%;
+  margin-bottom: 1%;
+  height: 70%;
+  border-radius: 15px;
+  -webkit-text-fill-color: rgba(243, 241, 241, 0.986);
+  background-color: rgb(44, 43, 43, 0);
+  outline: none;
+  text-indent: 3%;
+  transition: 0.3s;
+  font-size: 1vw;
+  z-index: 10;
+}
+
+.add_status{
+  width: 95%;
+  border-radius: 15px;
+  -webkit-text-fill-color: rgba(243, 241, 241, 0.986);
+  background-color: rgb(44, 43, 43);
+  color: grey;
+  border-width: 2px;
+  border-style: solid;
+  outline: none;
+  text-indent: 3%;
+  transition: 0.3s;
+  font-size: 1vw;
+  z-index: 10;
+  height: 6.5vh;
+  align-self: center;
+}
+
+
+.emoji-bar{
+  flex-direction: row;
+  background-color: rgb(26, 25, 25, 0);
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 100%;
+  height: 5.5vh;
+  overflow: visible;
+}
+
+.emoji-bar div {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.emoji-bar div:hover{
+  transform: scale(1.15);
+}
+
+.emoji-bar div + div{
+  margin-left: 5px;
+}
+
+.title{
+  overflow: visible;
+  margin-top: 2vh;
+  background-color: rgb(44, 43, 43, 0);
+  color: white;
+  border-style: none;
+  outline: none;
+  text-align: left;
+  text-indent: 4%;
+  font-size: 1.6vw;
+  z-index: 10;
+}
+
+.status_background{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 96%;
+  height: 90%;
+  /* margin: 10px; */
+  border-radius: 10px;
+  
+  align-self: center;
+  justify-self: center;
+}
+
+.bottom-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.recent_posts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:36vw;
+  height: 47.5vh;
+  border-radius: 15px;
+  margin-top: 3vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+ 
+}
+
+.recent_games{
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  height: 63%;
+  margin-right: 15px;
+  margin-top: 3vh;
+  margin-bottom: 9.5vh;
+  border-radius: 15px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.friends{
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  height: 19%;
+  margin-top: 5vh;
+  margin-right: 15px;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_1{
+  width: 100%;
+  height: 1%;
+  border-radius: 15px;
+  font-size: 1.5vw;
+  background-color: rgba(161, 39, 39, 0);
+  color: white;
+  text-align: center;
+  z-index: 10;
+  overflow: visible;
+  flex: 0.4;
+}
+
+.background_friends{
+  display: flex;
+  flex-direction: column;
+  width: 98.5%;
+  height: 90%;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent_posts_background{
+  display: flex;
+  width: 96%;
+  height: 94%;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent_games_background{
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 96%;
+  border-radius: 10px;
+}
+
+.bottom-div{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(26, 25, 25, 0);
+  flex: 5;
+}
+
+.bottom-left-div{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(26, 25, 25, 0);
+  flex: 1;
+  align-items: center;
+}
+
+.bottom-right-div{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(26, 25, 25, 0);
+  flex: 1;
+}
+
+.pic_1{
+  width: 90%;
+  height: 70%;
+  margin: 7.5px;
+  flex: 1.5;
+  align-items: center;
+}
+
+.pic_2{
+  width: 97%;
+  height: 99%;
+  margin: 7.5px;
+  margin-left: 0px;
+}
+
+.create_games_background{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 28%;
+  margin: 7.5px;
+  flex: 1;
+  align-items: center;
+}
+
+.create_button_{
+  color: white;
+  border-radius: 25px;
+  border-style: none;
+  margin-top: 8vh;
+  height: 45%;
+  width: 96%;
+  text-align: center;
+  background-color: rgb(31, 148, 1);
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.set_options{
+  color: white;
+  position: absolute;
+}
+
+.background_posts_title{
+  background-color: rgb(26, 25, 25, 0);
+  color:rgb(26, 25, 25);
+  font-size: 2vw;
+  border-radius: 0;
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.background_friends_title{
+  top: 0%;
+  margin: 10px;
+  align-self: center;
+  background-color: rgb(26, 25, 25, 0);
+  color: rgb(26, 25, 25);
+  font-size: 2vw;
+  overflow: visible;
+}
+
+.studio_text{
+  background-color: rgb(26, 25, 25, 0);
+  margin: 1vh; 
+  width: 96%;
+  height: 70%;
+  word-wrap: normal;
+  font-size: 1.2vw;
+}
+
+.friends_button_{
+  color: white;
+  border-radius: 25px;
+  border-style: none;
+  flex: 1;
+  width: 15%;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: visible;
+  background-color: rgb(31, 148, 1);
+  font-size:  1.25vw;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
