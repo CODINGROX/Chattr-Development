@@ -15,7 +15,7 @@
          <div id="Log_In">
           <img id="top_text" src="https://media.discordapp.net/attachments/617902510916763678/625036157998202901/jjj.png?width=400&height=96" class="top_text" onclick="home()">
           <form autocomplete='false' action="/home" method="post" onsubmit="createCookies();">
-            <input id="Login" type="text" name="name" placeholder="Username">
+            <input id="Login" type="text" name="name" placeholder="Username" autocomplete="off">
             <input id="Password" type="password" name="password" placeholder="Password">
             <input id="login_button" type="submit" value="Login">
           </form>
@@ -23,7 +23,7 @@
       </div>
 		</div>
     <div class="main-container">
-	  <form autocomplete='false' action="/register", method="post", onsubmit="createCookiesforRegistration();">		
+	  <form autocomplete='off' action="/register", method="post", onsubmit="createCookiesforRegistration();">		
     <div class="top-container">
       <div id="Special_Div"> </div>
       <div id="Desc_Background"> 
